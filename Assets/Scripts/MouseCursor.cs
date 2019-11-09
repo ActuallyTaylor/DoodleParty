@@ -8,6 +8,7 @@ namespace FreeDraw
     {                
         public SpriteRenderer sr;
         public LayerMask Drawing_Layers;
+        public LayerMask UI_Layers;
         public Drawable DrawArea;
         public DrawingSettings DrawSettings;
         private int markerSize = 5;
@@ -27,16 +28,26 @@ namespace FreeDraw
             Vector3 movement = new Vector3(Input.GetAxis("MoveHorizontal"), Input.GetAxis("MoveVerticle"),0.0f);
             transform.position = transform.position + movement * Time.deltaTime * speed;
 
-            if (Input.GetButton("Draw") && !drew) {
-                Collider2D hit = Physics2D.OverlapPoint(transform.position + movement * Time.deltaTime, Drawing_Layers.value);
+            if (Input.GetButton("Draw")) {
+                //Drawing Stuff
+                if (!drew) {
+                    Collider2D hit = Physics2D.OverlapPoint(transform.position + movement * Time.deltaTime, Drawing_Layers.value);
 
-                if (hit != null && hit.transform != null) {
-                    DrawArea.BrushTemplate(transform.position + movement * Time.deltaTime);
-                    onCanvas = true;
-                } else {
-                    onCanvas = false;
+                    if (hit != null && hit.transform != null) {
+                        DrawArea.BrushTemplate(transform.position + movement * Time.deltaTime);
+                        onCanvas = true;
+                    } else {
+                        onCanvas = false;
+                    }
                 }
-                
+                //UI Stuff
+                Collider2D hit2 = Physics2D.OverlapPoint(transform.position + movement * Time.deltaTime, UI_Layers.value);
+
+                if (hit2 != null && hit2.transform != null) {
+                    print("Yeet");
+                } else {
+
+                }     
             }
             if (Input.GetButtonUp("Draw") && onCanvas) {
                 drew = true;
@@ -49,7 +60,6 @@ namespace FreeDraw
 
             if (Input.GetAxis("SizeDown") == 1) {
                 decrease();
-                print(markerSize);
             }
 
             if (Input.GetButtonDown("CycleColor")) {
@@ -74,6 +84,7 @@ namespace FreeDraw
             }
             
         }
+
         public void increase() {
             markerSize += 1;
             if (markerSize <= 7) {
