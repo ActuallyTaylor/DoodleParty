@@ -4,12 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
-  - Canvas
-=======
-  - Start
   - quit
->>>>>>> parent of bd66380... Revert "uhh"
   layers:
   - Default
   - TransparentFX
@@ -45,17 +40,14 @@ TagManager:
   - 
   m_SortingLayers:
   - name: Background
-    uniqueID: 381288681
+    uniqueID: 1231414065
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Canvas
-    uniqueID: 3145222815
-    locked: 0
-  - name: Dot
-    uniqueID: 2983300985
-    locked: 0
   - name: Front
-    uniqueID: 2470159007
+    uniqueID: 2448230397
+    locked: 0
+  - name: Draw
+    uniqueID: 899614255
     locked: 0
