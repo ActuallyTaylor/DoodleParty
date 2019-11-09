@@ -6,19 +6,18 @@ namespace FreeDraw
 {
     public class MouseCursor : MonoBehaviour
     {                
-        SpriteRenderer sr;
+        public SpriteRenderer sr;
         public LayerMask Drawing_Layers;
         public Drawable DrawArea;
         public DrawingSettings DrawSettings;
         private int markerSize = 5;
         public int speed;
         bool drew = false;
+        bool onCanvas = false;
         int color = 0;
         Color c = Color.black;
-
     // Start is called before the first frame update
         void Start() {
-            sr = GetComponent<SpriteRenderer>();
             sr.color = Color.black;
 
         }
@@ -33,10 +32,13 @@ namespace FreeDraw
 
                 if (hit != null && hit.transform != null) {
                     DrawArea.BrushTemplate(transform.position + movement * Time.deltaTime);
+                    onCanvas = true;
+                } else {
+                    onCanvas = false;
                 }
                 
             }
-            if (Input.GetButtonUp("Draw")) {
+            if (Input.GetButtonUp("Draw") && onCanvas) {
                 drew = true;
             }
             
