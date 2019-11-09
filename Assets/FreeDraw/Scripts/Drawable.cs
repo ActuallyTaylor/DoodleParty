@@ -17,6 +17,8 @@ namespace FreeDraw
         // PEN WIDTH (actually, it's a radius, in pixels)
         public static int Pen_Width = 3;
 
+        public Transform target;
+
         public delegate void Brush_Function(Vector2 world_position);
         // This is the function called when a left click happens
         // Pass in your own custom one to change the brush type
@@ -142,7 +144,7 @@ namespace FreeDraw
             if (mouse_held_down && !no_drawing_on_current_drag)
             {
                 // Convert mouse coordinates to world coordinates
-                Vector2 mouse_world_position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 mouse_world_position = Camera.main.ScreenToWorldPoint(target.transform.position);
 
                 // Check if the current mouse position overlaps our image
                 Collider2D hit = Physics2D.OverlapPoint(mouse_world_position, Drawing_Layers.value);
@@ -172,7 +174,8 @@ namespace FreeDraw
                 no_drawing_on_current_drag = false;
             }
             mouse_was_previously_held_down = mouse_held_down;
-        }
+            
+            }
 
 
 
@@ -194,10 +197,6 @@ namespace FreeDraw
                 MarkPixelsToColour(cur_position, width, color);
             }
         }
-
-
-
-
 
         public void MarkPixelsToColour(Vector2 center_pixel, int pen_thickness, Color color_of_pen)
         {
