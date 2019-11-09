@@ -8,14 +8,10 @@ public class Draw : MonoBehaviour
     public Transform baseDot;
     private Color black = new Color(0,0,0,1);    
     private Color white = new Color(1,1,1,1);
-    Texture2D texture;
 
     // Start is called before the first frame update
     void Start()
     {
-        var rawImage = GetComponent<RawImage>();
-        texture = rawImage.texture as Texture2D;
-
 
     }
 
@@ -26,12 +22,7 @@ public class Draw : MonoBehaviour
         Vector2 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
 
         if (Input.GetKey (KeyCode.Mouse0)) {
-            Debug.Log("Yeet");
-            texture.SetPixel((int)objPosition.x, (int)objPosition.y, black);  
-            print(objPosition.x);
-            print(objPosition.y);
-        }
-        texture.Apply();       
 
+        }
     }
 }
