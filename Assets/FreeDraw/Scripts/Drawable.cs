@@ -42,7 +42,7 @@ namespace FreeDraw
         Color transparent;
         Color32[] cur_colors;
         bool mouse_was_previously_held_down = false;
-        bool no_drawing_on_current_drag = false;
+        public bool no_drawing_on_current_drag = false;
 
 
 
@@ -172,6 +172,7 @@ namespace FreeDraw
             {
                 previous_drag_position = Vector2.zero;
                 no_drawing_on_current_drag = false;
+
             }
             mouse_was_previously_held_down = mouse_held_down;
             
