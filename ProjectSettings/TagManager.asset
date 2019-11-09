@@ -4,7 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Canvas
+=======
+  - Start
+  - quit
+>>>>>>> parent of bd66380... Revert "uhh"
   layers:
   - Default
   - TransparentFX
