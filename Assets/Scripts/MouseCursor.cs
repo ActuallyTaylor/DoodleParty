@@ -9,6 +9,7 @@ namespace FreeDraw
         public SpriteRenderer sr;
         public LayerMask Drawing_Layers;
         public LayerMask UI_Layers;
+        public LayerMask Shut_Layers;
         public Drawable DrawArea;
         public DrawingSettings DrawSettings;
         private int markerSize = 5;
@@ -19,6 +20,8 @@ namespace FreeDraw
         Color c = Color.black;
         public bool click = false;
         public Animator animator;
+        public SpriteRenderer menu;
+
     // Start is called before the first frame update
         void Start() {
             sr.color = Color.black;
@@ -39,6 +42,7 @@ namespace FreeDraw
                     onCanvas = true;
                 } else {
                     onCanvas = false;
+                    drew = true;
                 }
 
             }
@@ -55,18 +59,28 @@ namespace FreeDraw
             if (Input.GetButtonDown("Draw")) {
                 //Here is wher you want to put all of your UI Stuff
                 Collider2D hitUI = Physics2D.OverlapPoint(transform.position + movement * Time.deltaTime, UI_Layers.value);
-
+                Collider2D hitShutDown = Physics2D.OverlapPoint(transform.position + movement * Time.deltaTime, Shut_Layers.value);
+                
                 if (hitUI != null && hitUI.transform != null) {
-                    print("Yeet");
-                    click = true;
+                    if (!click) {
+                        click = true;
+                        menu.enabled = true;
+                    } else {
+                        click = false;
+                        menu.enabled = false;
+                    }
+                    animator.SetBool("Click", click);
 
                 } else {
-                    click = false;
+                    //click = false;
+                    //menu.enabled = false;
+                    //animator.SetBool("Click", click);
 
-                }    
-                
-                animator.SetBool("Click", click);
-                transform.GetChild(0).gameObject.SetActive(click);
+                }
+                if (hitShutDown != null && hitShutDown.transform != null) {
+                    print("Shut Down");
+                    Application.Quit();
+                }
             }
 
 
