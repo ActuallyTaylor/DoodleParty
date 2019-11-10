@@ -25,7 +25,8 @@ namespace FreeDraw
     // Start is called before the first frame update
         void Start() {
             sr.color = Color.black;
-
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
 
         // Update is called once per frame
