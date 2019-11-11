@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 namespace FreeDraw {
     public class MouseCursorStart : MonoBehaviour {
         public LayerMask Start_Layers;
@@ -10,7 +12,6 @@ namespace FreeDraw {
         public LayerMask Two_Layers;
         public LayerMask Three_Layers;
         public LayerMask Four_Layers;
-
         public int speed;
 
         // Start is called before the first frame update
@@ -57,6 +58,7 @@ namespace FreeDraw {
                 if (hit2 != null && hit2.transform != null) {
                     PlayerPrefs.SetInt("amountOfPlayers", 2);   
                     print("Set Players 2");
+
                 } 
 
                 if (hit3 != null && hit3.transform != null) {

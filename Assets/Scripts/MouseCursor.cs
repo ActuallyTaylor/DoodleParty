@@ -25,6 +25,12 @@ namespace FreeDraw {
         public LayerMask Settings_Layers;
         public float targetTime = 60.0f;
         public bool drawing = false;
+        private int turnCount;
+        private bool waiting = false;
+        public float waitTime = 15.0f;
+        public bool gameOver = false;
+
+        private string[] numbers = new string[] {"tree", "house"};
 
         // Start is called before the first frame update
         void Start () {
@@ -37,52 +43,89 @@ namespace FreeDraw {
             PlayerPrefs.SetString("TurnText", "Player " + PlayerPrefs.GetInt("currentPlayer") + "'s turn");
 
             if (amountOfPlayers == 2) {
-                
+                turnCount = 6;
             } else if (amountOfPlayers == 3) {
-
+                turnCount = 9;
             } else if (amountOfPlayers == 4) {
-
+                turnCount = 12;
             }
         }
 
         // Update is called once per frame
         void Update () {
-            
             Vector3 movement = new Vector3 (Input.GetAxis ("MoveHorizontal"), Input.GetAxis ("MoveVerticle"), 0.0f);
             transform.position = transform.position + movement * Time.deltaTime * speed;
-            if (drawing) {
+            PlayerPrefs.SetString("TurnText", "Player " + PlayerPrefs.GetInt("currentPlayer") + "'s turn");
+
+            if (turnCount < 0) {
+                gameOver = true;
+                
+            }
+            
+            if (!waiting && turnCount >= 0 && !gameOver) {
+
+                if (drawing) {
                 targetTime -= Time.deltaTime;
                 print(targetTime);
-            }
- 
-            if (targetTime <= 0.0f)
-            {
-                turnEnded();
-            }
- 
-     
-            if (Input.GetButton ("Draw") && !drew) {
-                Collider2D hit = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, Drawing_Layers.value);
 
-                if (hit != null && hit.transform != null) {
-                    drawing = true;
-                    DrawArea.BrushTemplate (transform.position + movement * Time.deltaTime);
-                    onCanvas = true;
-                } else {
-                    onCanvas = false;
-                    //drew = true;
+                }
+                 
+                if (targetTime <= 0.0f) {
+                turnEnded();
+
                 }
 
+                getDrawDown();
+                getDraw();
+                changeMarkerSize();
+                isOnCanvas();
+                getDrawUp();
+                changeColor();
             }
-            Collider2D canvas = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, Drawing_Layers.value);
 
-            if (canvas != null && canvas.transform != null) {
-                onCanvas = true;
-                sr.enabled = true;
-            } else {
-                onCanvas = false;
-                sr.enabled = false;
+            if (waiting) {
+                waitTime -= Time.deltaTime;
+                if (waitTime <= 0.0f) {
+                    drew = false;
+                    drawing = false;
+                    waiting = false;
+                    waitTime = 15.0f;
+                }
             }
+
+        }
+        public void changeColor() {
+            if (Input.GetButtonDown ("CycleColor")) {
+                if (color == 0) {
+                    DrawSettings.SetMarkerBlue ();
+                    sr.color = Color.blue;
+                    color++;
+                } else if (color == 1) {
+                    DrawSettings.SetMarkerRed ();
+                    sr.color = Color.red;
+                    color++;
+                } else if (color == 2) {
+                    DrawSettings.SetMarkerGreen ();
+                    sr.color = Color.green;
+                    color++;
+
+                } else if (color == 3) {
+                    DrawSettings.SetMarkerBlack ();
+                    sr.color = Color.black;
+                    color = 0;
+                }
+            }
+        }
+        public void getDrawUp() {
+            if (Input.GetButtonUp ("Draw") && onCanvas) {
+                turnEnded();
+                drawing = false;
+
+            }
+
+        }
+        public void getDrawDown() {
+            Vector3 movement = new Vector3 (Input.GetAxis ("MoveHorizontal"), Input.GetAxis ("MoveVerticle"), 0.0f);
 
             if (Input.GetButtonDown ("Draw")) {
                 //Here is wher you want to put all of your UI Stuff
@@ -122,13 +165,37 @@ namespace FreeDraw {
                     Application.Quit ();
                 }
             }
+        }
 
-            if (Input.GetButtonUp ("Draw") && onCanvas) {
-                turnEnded();
-                drawing = false;
+        public void getDraw() {
+            Vector3 movement = new Vector3 (Input.GetAxis ("MoveHorizontal"), Input.GetAxis ("MoveVerticle"), 0.0f);
+                 
+            if (Input.GetButton ("Draw") && !drew) {
+                Collider2D hit = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, Drawing_Layers.value);
+
+                if (hit != null && hit.transform != null) {
+                    drawing = true;
+                    DrawArea.BrushTemplate (transform.position + movement * Time.deltaTime);
+                    onCanvas = true;
+                } else {
+                    onCanvas = false;
+                    //drew = true;
+                }
 
             }
-
+        }
+        public void isOnCanvas() {
+            Vector3 movement = new Vector3 (Input.GetAxis ("MoveHorizontal"), Input.GetAxis ("MoveVerticle"), 0.0f);
+            Collider2D canvas = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, Drawing_Layers.value);
+            if (canvas != null && canvas.transform != null) {
+                onCanvas = true;
+                sr.enabled = true;
+            } else {
+                onCanvas = false;
+                sr.enabled = false;
+            }
+        }
+        public void changeMarkerSize(){
             if (Input.GetButton ("SizeUP")) {
                 increase ();
                 print (markerSize);
@@ -137,27 +204,6 @@ namespace FreeDraw {
             if (Input.GetAxis ("SizeDown") == 1) {
                 decrease ();
                 print (markerSize);
-            }
-
-            if (Input.GetButtonDown ("CycleColor")) {
-                if (color == 0) {
-                    DrawSettings.SetMarkerBlue ();
-                    sr.color = Color.blue;
-                    color++;
-                } else if (color == 1) {
-                    DrawSettings.SetMarkerRed ();
-                    sr.color = Color.red;
-                    color++;
-                } else if (color == 2) {
-                    DrawSettings.SetMarkerGreen ();
-                    sr.color = Color.green;
-                    color++;
-
-                } else if (color == 3) {
-                    DrawSettings.SetMarkerBlack ();
-                    sr.color = Color.black;
-                    color = 0;
-                }
             }
 
         }
@@ -180,8 +226,20 @@ namespace FreeDraw {
             }
         }
         public void turnEnded() {
-            drew = true;
+            int amountOfPlayers = PlayerPrefs.GetInt("amountOfPlayers");
+            int currentPlayer = PlayerPrefs.GetInt("currentPlayer");
+            turnCount -= 1;
+            waiting = true;
+            waitTime = 30.0f;
+            drawing = false;
+            drew = false;
             
+            if (currentPlayer < amountOfPlayers) {
+                PlayerPrefs.SetInt("currentPlayer", currentPlayer + 1);
+            } else {
+                PlayerPrefs.SetInt("currentPlayer", 1);
+
+            }
         }
 
     }
