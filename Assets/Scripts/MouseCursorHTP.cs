@@ -9,7 +9,6 @@ public class MouseCursorHTP : MonoBehaviour
     {                
         public LayerMask Back_Layers;
         public int speed;
-        public int previousLevel;
 
     // Start is called before the first frame update
         void Start() {

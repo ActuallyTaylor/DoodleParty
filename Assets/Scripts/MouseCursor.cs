@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 namespace FreeDraw {
     public class MouseCursor : MonoBehaviour {
         public SpriteRenderer sr;
@@ -22,29 +23,54 @@ namespace FreeDraw {
         //Sam additions
         public LayerMask Help_Layers;
         public LayerMask Settings_Layers;
+        public float targetTime = 60.0f;
+        public bool drawing = false;
 
         // Start is called before the first frame update
         void Start () {
             sr.color = Color.black;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            int amountOfPlayers = PlayerPrefs.GetInt("amountOfPlayers");
+            PlayerPrefs.SetInt("currentPlayer", 1);
+
+            PlayerPrefs.SetString("TurnText", "Player " + PlayerPrefs.GetInt("currentPlayer") + "'s turn");
+
+            if (amountOfPlayers == 2) {
+                
+            } else if (amountOfPlayers == 3) {
+
+            } else if (amountOfPlayers == 4) {
+
+            }
         }
 
         // Update is called once per frame
         void Update () {
-
+            
             Vector3 movement = new Vector3 (Input.GetAxis ("MoveHorizontal"), Input.GetAxis ("MoveVerticle"), 0.0f);
             transform.position = transform.position + movement * Time.deltaTime * speed;
-
+            if (drawing) {
+                targetTime -= Time.deltaTime;
+                print(targetTime);
+            }
+ 
+            if (targetTime <= 0.0f)
+            {
+                turnEnded();
+            }
+ 
+     
             if (Input.GetButton ("Draw") && !drew) {
                 Collider2D hit = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, Drawing_Layers.value);
 
                 if (hit != null && hit.transform != null) {
+                    drawing = true;
                     DrawArea.BrushTemplate (transform.position + movement * Time.deltaTime);
                     onCanvas = true;
                 } else {
                     onCanvas = false;
-                    drew = true;
+                    //drew = true;
                 }
 
             }
@@ -67,6 +93,7 @@ namespace FreeDraw {
                 Collider2D hitSettings = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, Settings_Layers.value);
                 if (hitHelp != null && hitHelp.transform != null) {
                     SceneManager.LoadScene (3);
+                    PlayerPrefs.SetInt("previousLevel", 1);
 
                 }
                 if (hitSettings != null && hitSettings.transform != null) {
@@ -97,7 +124,9 @@ namespace FreeDraw {
             }
 
             if (Input.GetButtonUp ("Draw") && onCanvas) {
-                drew = true;
+                turnEnded();
+                drawing = false;
+
             }
 
             if (Input.GetButton ("SizeUP")) {
@@ -150,6 +179,11 @@ namespace FreeDraw {
                 markerSize = 2;
             }
         }
-    }
+        public void turnEnded() {
+            drew = true;
+            
+        }
 
-}
+    }
+} 
+ 
