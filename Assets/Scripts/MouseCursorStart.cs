@@ -19,6 +19,11 @@ namespace FreeDraw {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             PlayerPrefs.SetInt("previousLevel", 0);
+            PlayerPrefs.SetInt("Player1Score", 0);
+            PlayerPrefs.SetInt("Player2Score", 0);
+            PlayerPrefs.SetInt("Player3Score", 0);
+            PlayerPrefs.SetInt("Player4Score", 0);
+
 
         }
 
