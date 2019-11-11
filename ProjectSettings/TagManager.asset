@@ -16,10 +16,10 @@ TagManager:
   - 
   - Canvas
   - ShutDown
+  - Back
+  - Help
   - Start
-  - 
-  - 
-  - 
+  - Settings
   - 
   - 
   - 
@@ -50,6 +50,9 @@ TagManager:
     locked: 0
   - name: Draw
     uniqueID: 899614255
+    locked: 0
+  - name: StartButton
+    uniqueID: 3752066585
     locked: 0
   - name: UI
     uniqueID: 291442561
