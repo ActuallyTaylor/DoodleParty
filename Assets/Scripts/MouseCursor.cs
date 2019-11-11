@@ -31,7 +31,6 @@ namespace FreeDraw
         private bool waiting = false;
         public float waitTime;
         public bool gameOver = false;
-        private string[] numbers = new string[] { "tree", "house" };
 
         // Start is called before the first frame update
         void Start()

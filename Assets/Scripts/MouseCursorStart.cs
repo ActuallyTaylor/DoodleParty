@@ -46,7 +46,7 @@ namespace FreeDraw {
 
                 if (hitUI != null && hitUI.transform != null) {
                     Debug.Log ("Starting");
-                    SceneManager.LoadScene (1);
+                    SceneManager.LoadScene (5);
 
                 } else {
 

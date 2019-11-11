@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Voting Scene.unity
     guid: 760a5753896f07a45b0cd11aa5c52038
+  - enabled: 1
+    path: Assets/Scenes/CatagoryScene.unity
+    guid: 4d5e583e8e75bc944ad398a3e86dbee1
   m_configObjects: {}
