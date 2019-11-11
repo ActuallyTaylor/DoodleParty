@@ -13,6 +13,7 @@ namespace FreeDraw {
         public LayerMask Three_Layers;
         public LayerMask Four_Layers;
         public int speed;
+        public Animator animator;
 
         // Start is called before the first frame update
         void Start () {
@@ -23,6 +24,7 @@ namespace FreeDraw {
             PlayerPrefs.SetInt("Player2Score", 0);
             PlayerPrefs.SetInt("Player3Score", 0);
             PlayerPrefs.SetInt("Player4Score", 0);
+            PlayerPrefs.SetInt("amountOfPlayers", 2);
 
 
         }
@@ -78,6 +80,10 @@ namespace FreeDraw {
 
                 } 
             }
+            int numPlayers = PlayerPrefs.GetInt("amountOfPlayers");
+            animator.SetInteger("Players", numPlayers);
+            
+
         }
     }
 }
