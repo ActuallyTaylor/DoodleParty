@@ -97,6 +97,7 @@ namespace FreeDraw
             isOnCanvas();
             changeColor();
 
+            /*
             if (waiting && !paused)
             {
                 waitTime -= Time.deltaTime;
@@ -110,6 +111,7 @@ namespace FreeDraw
                     waitTime = PlayerPrefs.GetFloat("WaitTime");
                 }
             }
+            */
         }
         public void pause() {
             if (Input.GetButtonDown("Pause")) {
@@ -230,7 +232,7 @@ namespace FreeDraw
         {
             Vector3 movement = new Vector3(Input.GetAxis("MoveHorizontal"), Input.GetAxis("MoveVerticle"), 0.0f);
 
-            if (Input.GetButton("Draw") && !drew)
+            if (Input.GetButton("Draw") && !drew || Input.GetKey("a"))
             {
                 Collider2D hit = Physics2D.OverlapPoint(transform.position + movement * Time.deltaTime, Drawing_Layers.value);
 
@@ -310,13 +312,15 @@ namespace FreeDraw
             int currentPlayer = PlayerPrefs.GetInt("currentPlayer");
             turnCount -= 1;
             print(turnCount);
-            waiting = true;
+            //waiting = true;
             waitTime = PlayerPrefs.GetFloat("WaitTime");
             targetTime = PlayerPrefs.GetFloat("targetTime");
 
             drawing = false;
-            drew = false;
-
+            drew = false;   
+            waiting = false;
+            waitTime = PlayerPrefs.GetFloat("WaitTime");
+            
             if (currentPlayer < amountOfPlayers)
             {
                 PlayerPrefs.SetInt("currentPlayer", currentPlayer + 1);

@@ -1,0 +1,901 @@
+Booting.
+Booting..
+Booting...
+Booting..
+Booting.
+Booting..
+Booting...
+
+Kernel [0/10]
+Kernel [1/10]
+Kernel [2/10]
+Kernel [3/10]
+Kernel [4/10]
+Kernel [5/10]
+Kernel [6/10]
+Kernel [7/10]
+Kernel [8/10]
+Kernel [9/10]
+Kernel [10/10]
+
+Kernel Compiled
+
+Loading file system...
+├── Assembly-CSharp.csproj
+├── Assets
+│   ├── Animations
+│   │   ├── Clicked.anim
+│   │   ├── Clicked.anim.meta
+│   │   ├── Default.anim
+│   │   ├── Default.anim.meta
+│   │   ├── Number_2.anim
+│   │   ├── Number_2.anim.meta
+│   │   ├── Number_3.anim
+│   │   ├── Number_3.anim.meta
+│   │   ├── Number_4.anim
+│   │   ├── Number_4.anim.meta
+│   │   ├── Players_Blank.controller
+│   │   ├── Players_Blank.controller.meta
+│   │   ├── TaskBar.controller
+│   │   ├── TaskBar.controller.meta
+│   │   ├── Title.anim
+│   │   ├── Title.anim.meta
+│   │   ├── Title.controller
+│   │   ├── Title.controller.meta
+│   │   ├── Unclicked.anim
+│   │   └── Unclicked.anim.meta
+│   ├── Animations.meta
+│   ├── Fonts
+│   │   ├── 95Font\ SDF.asset
+│   │   ├── 95Font\ SDF.asset.meta
+│   │   ├── 95Font.ttf
+│   │   └── 95Font.ttf.meta
+│   ├── Fonts.meta
+│   ├── FreeDraw
+│   │   ├── Art
+│   │   │   ├── BlueMarker.png
+│   │   │   ├── BlueMarker.png.meta
+│   │   │   ├── Eraser.png
+│   │   │   ├── Eraser.png.meta
+│   │   │   ├── GreenMarker.png
+│   │   │   ├── GreenMarker.png.meta
+│   │   │   ├── ReadWriteEnabledImage.png
+│   │   │   ├── ReadWriteEnabledImage.png.meta
+│   │   │   ├── RedMarker.png
+│   │   │   └── RedMarker.png.meta
+│   │   ├── Art.meta
+│   │   ├── ExampleDrawingScene.unity
+│   │   ├── ExampleDrawingScene.unity.meta
+│   │   ├── README.pdf
+│   │   ├── README.pdf.meta
+│   │   ├── Scripts
+│   │   │   ├── Drawable.cs
+│   │   │   ├── Drawable.cs.meta
+│   │   │   ├── DrawingSettings.cs
+│   │   │   └── DrawingSettings.cs.meta
+│   │   └── Scripts.meta
+│   ├── FreeDraw.meta
+│   ├── Pictures
+│   │   ├── AButton.png
+│   │   ├── AButton.png.meta
+│   │   ├── AboutVoting.png
+│   │   ├── AboutVoting.png.meta
+│   │   ├── BButton.png
+│   │   ├── BButton.png.meta
+│   │   ├── BRICK.png
+│   │   ├── BRICK.png.meta
+│   │   ├── BackButton.png
+│   │   ├── BackButton.png.meta
+│   │   ├── Background.png
+│   │   ├── Background.png.meta
+│   │   ├── CategoryScrren.png
+│   │   ├── CategoryScrren.png.meta
+│   │   ├── Categorys.png
+│   │   ├── Categorys.png.meta
+│   │   ├── Credits.png
+│   │   ├── Credits.png.meta
+│   │   ├── ErrorSettings.png
+│   │   ├── ErrorSettings.png.meta
+│   │   ├── Help.png
+│   │   ├── Help.png.meta
+│   │   ├── HelpButton.png
+│   │   ├── HelpButton.png.meta
+│   │   ├── Menu.png
+│   │   ├── Menu.png.meta
+│   │   ├── Menu_New.png
+│   │   ├── Menu_New.png.meta
+│   │   ├── Mouse.png
+│   │   ├── Mouse.png.meta
+│   │   ├── MouseCursor.png
+│   │   ├── MouseCursor.png.meta
+│   │   ├── Player1_Icon.png
+│   │   ├── Player1_Icon.png.meta
+│   │   ├── Player2_Icon.png
+│   │   ├── Player2_Icon.png.meta
+│   │   ├── Player3_Icon.png
+│   │   ├── Player3_Icon.png.meta
+│   │   ├── Player4_Icon.png
+│   │   ├── Player4_Icon.png.meta
+│   │   ├── Players_2.png
+│   │   ├── Players_2.png.meta
+│   │   ├── Players_3.png
+│   │   ├── Players_3.png.meta
+│   │   ├── Players_4.png
+│   │   ├── Players_4.png.meta
+│   │   ├── Players_Blank.png
+│   │   ├── Players_Blank.png.meta
+│   │   ├── QuickStart.png
+│   │   ├── QuickStart.png.meta
+│   │   ├── SettingsButton.png
+│   │   ├── SettingsButton.png.meta
+│   │   ├── Start.jpg
+│   │   ├── Start.jpg.meta
+│   │   ├── TaskBar.png
+│   │   ├── TaskBar.png.meta
+│   │   ├── TaskBar_Clicked.png
+│   │   ├── TaskBar_Clicked.png.meta
+│   │   ├── Turn.png
+│   │   ├── Turn.png.meta
+│   │   ├── Voting!.png
+│   │   ├── Voting!.png.meta
+│   │   ├── Voting.png
+│   │   ├── Voting.png.meta
+│   │   ├── XButton.png
+│   │   ├── XButton.png.meta
+│   │   ├── YButton.png
+│   │   ├── YButton.png.meta
+│   │   ├── canvas.png
+│   │   ├── canvas.png.meta
+│   │   ├── dot.jpg
+│   │   ├── dot.jpg.meta
+│   │   ├── endtask.png
+│   │   └── endtask.png.meta
+│   ├── Pictures.meta
+│   ├── TitleFrames
+│   │   └── Loading title...
+│   ├── TitleFrames.meta
+│   ├── Scenes
+│   │   ├── CatagoryScene.unity
+│   │   ├── CatagoryScene.unity.meta
+│   │   ├── HowToPlay.unity
+│   │   ├── HowToPlay.unity.meta
+│   │   ├── SampleScene.unity
+│   │   ├── SampleScene.unity.meta
+│   │   ├── Settings.unity
+│   │   ├── Settings.unity.meta
+│   │   ├── Start.unity
+│   │   ├── Start.unity.meta
+│   │   ├── Voting\ Scene.unity
+│   │   └── Voting\ Scene.unity.meta
+│   ├── Scenes.meta
+│   ├── Scripts
+│   │   ├── CatagoryHandler.cs
+│   │   ├── CatagoryHandler.cs.meta
+│   │   ├── MouseCursor.cs
+│   │   ├── MouseCursor.cs.meta
+│   │   ├── MouseCursorBackUp.cs
+│   │   ├── MouseCursorBackUp.cs.meta
+│   │   ├── MouseCursorHTP.cs
+│   │   ├── MouseCursorHTP.cs.meta
+│   │   ├── MouseCursorStart.cs
+│   │   ├── MouseCursorStart.cs.meta
+│   │   ├── MouseCursorVoting.cs
+│   │   ├── MouseCursorVoting.cs.meta
+│   │   ├── ScoreHandler.cs
+│   │   ├── ScoreHandler.cs.meta
+│   │   ├── TurnText.cs
+│   │   └── TurnText.cs.meta
+│   ├── Scripts.meta
+│   ├── TextMesh\ Pro
+│   │   ├── Documentation
+│   │   │   ├── TextMesh\ Pro\ User\ Guide\ 2016.pdf
+│   │   │   └── TextMesh\ Pro\ User\ Guide\ 2016.pdf.meta
+│   │   ├── Documentation.meta
+│   │   ├── Fonts
+│   │   │   ├── LiberationSans\ -\ OFL.txt
+│   │   │   ├── LiberationSans\ -\ OFL.txt.meta
+│   │   │   ├── LiberationSans.ttf
+│   │   │   └── LiberationSans.ttf.meta
+│   │   ├── Fonts.meta
+│   │   ├── Resources
+│   │   │   ├── Fonts\ &\ Materials
+│   │   │   │   ├── LiberationSans\ SDF\ -\ Drop\ Shadow.mat
+│   │   │   │   ├── LiberationSans\ SDF\ -\ Drop\ Shadow.mat.meta
+│   │   │   │   ├── LiberationSans\ SDF\ -\ Fallback.asset
+│   │   │   │   ├── LiberationSans\ SDF\ -\ Fallback.asset.meta
+│   │   │   │   ├── LiberationSans\ SDF\ -\ Outline.mat
+│   │   │   │   ├── LiberationSans\ SDF\ -\ Outline.mat.meta
+│   │   │   │   ├── LiberationSans\ SDF.asset
+│   │   │   │   └── LiberationSans\ SDF.asset.meta
+│   │   │   ├── Fonts\ &\ Materials.meta
+│   │   │   ├── LineBreaking\ Following\ Characters.txt
+│   │   │   ├── LineBreaking\ Following\ Characters.txt.meta
+│   │   │   ├── LineBreaking\ Leading\ Characters.txt
+│   │   │   ├── LineBreaking\ Leading\ Characters.txt.meta
+│   │   │   ├── Shaders
+│   │   │   │   ├── TMP_Bitmap-Custom-Atlas.shader
+│   │   │   │   ├── TMP_Bitmap-Custom-Atlas.shader.meta
+│   │   │   │   ├── TMP_Bitmap-Mobile.shader
+│   │   │   │   ├── TMP_Bitmap-Mobile.shader.meta
+│   │   │   │   ├── TMP_Bitmap.shader
+│   │   │   │   ├── TMP_Bitmap.shader.meta
+│   │   │   │   ├── TMP_SDF\ Overlay.shader
+│   │   │   │   ├── TMP_SDF\ Overlay.shader.meta
+│   │   │   │   ├── TMP_SDF-Mobile\ Masking.shader
+│   │   │   │   ├── TMP_SDF-Mobile\ Masking.shader.meta
+│   │   │   │   ├── TMP_SDF-Mobile\ Overlay.shader
+│   │   │   │   ├── TMP_SDF-Mobile\ Overlay.shader.meta
+│   │   │   │   ├── TMP_SDF-Mobile.shader
+│   │   │   │   ├── TMP_SDF-Mobile.shader.meta
+│   │   │   │   ├── TMP_SDF-Surface-Mobile.shader
+│   │   │   │   ├── TMP_SDF-Surface-Mobile.shader.meta
+│   │   │   │   ├── TMP_SDF-Surface.shader
+│   │   │   │   ├── TMP_SDF-Surface.shader.meta
+│   │   │   │   ├── TMP_SDF.shader
+│   │   │   │   ├── TMP_SDF.shader.meta
+│   │   │   │   ├── TMP_Sprite.shader
+│   │   │   │   ├── TMP_Sprite.shader.meta
+│   │   │   │   ├── TMPro.cginc
+│   │   │   │   ├── TMPro.cginc.meta
+│   │   │   │   ├── TMPro_Properties.cginc
+│   │   │   │   ├── TMPro_Properties.cginc.meta
+│   │   │   │   ├── TMPro_Surface.cginc
+│   │   │   │   └── TMPro_Surface.cginc.meta
+│   │   │   ├── Shaders.meta
+│   │   │   ├── Sprite\ Assets
+│   │   │   │   ├── EmojiOne.asset
+│   │   │   │   └── EmojiOne.asset.meta
+│   │   │   ├── Sprite\ Assets.meta
+│   │   │   ├── Style\ Sheets
+│   │   │   │   ├── Default\ Style\ Sheet.asset
+│   │   │   │   └── Default\ Style\ Sheet.asset.meta
+│   │   │   ├── Style\ Sheets.meta
+│   │   │   ├── TMP\ Settings.asset
+│   │   │   └── TMP\ Settings.asset.meta
+│   │   ├── Resources.meta
+│   │   ├── Sprites
+│   │   │   ├── EmojiOne\ Attribution.txt
+│   │   │   ├── EmojiOne\ Attribution.txt.meta
+│   │   │   ├── EmojiOne.json
+│   │   │   ├── EmojiOne.json.meta
+│   │   │   ├── EmojiOne.png
+│   │   │   └── EmojiOne.png.meta
+│   │   └── Sprites.meta
+│   └── TextMesh\ Pro.meta
+├── DoodleParty.sln
+├── Library
+│   ├── APIUpdater
+│   │   └── project-dependencies.graph
+│   ├── AnnotationManager
+│   ├── AssetImportState
+│   ├── BuildPlayer.prefs
+│   ├── BuildSettings.asset
+│   ├── CurrentLayout-default\ 2.dwlt
+│   ├── CurrentLayout-default.dwlt
+│   ├── EditorOnlyScriptingUserSettings.json
+│   ├── EditorUserBuildSettings.asset
+│   ├── EditorUserSettings.asset
+│   ├── GridBrush
+│   │   └── UnityEditor.Tilemaps.GridBrush.asset
+│   ├── InspectorExpandedItems.asset
+│   ├── LastBuild.buildreport
+│   ├── LastSceneManagerSetup.txt
+│   ├── LibraryFormatVersion.txt
+│   ├── MonoManager.asset
+│   ├── PackageCache
+│   │   ├── com.unity.collab-proxy@1.2.16
+│   │   │   ├── CHANGELOG.md
+│   │   │   ├── CHANGELOG.md.meta
+│   │   │   ├── DEPENDENCIES.md
+│   │   │   ├── DEPENDENCIES.md.meta
+│   │   │   ├── Documentation~
+│   │   │   │   └── collab-proxy.md
+│   │   │   ├── Editor
+│   │   │   │   ├── AssemblyInfo.cs
+│   │   │   │   ├── AssemblyInfo.cs.meta
+│   │   │   │   ├── Collab
+│   │   │   │   │   ├── Bootstrap.cs
+│   │   │   │   │   ├── Bootstrap.cs.meta
+│   │   │   │   │   ├── CollabAnalytics.cs
+│   │   │   │   │   ├── CollabAnalytics.cs.meta
+│   │   │   │   │   ├── CollabHistoryWindow.cs
+│   │   │   │   │   ├── CollabHistoryWindow.cs.meta
+│   │   │   │   │   ├── CollabToolbarButton.cs
+│   │   │   │   │   ├── CollabToolbarButton.cs.meta
+│   │   │   │   │   ├── CollabToolbarWindow.cs
+│   │   │   │   │   ├── CollabToolbarWindow.cs.meta
+│   │   │   │   │   ├── Presenters
+│   │   │   │   │   │   ├── CollabHistoryPresenter.cs
+│   │   │   │   │   │   └── CollabHistoryPresenter.cs.meta
+│   │   │   │   │   ├── Presenters.meta
+│   │   │   │   │   ├── Views
+│   │   │   │   │   │   ├── BuildStatusButton.cs
+│   │   │   │   │   │   ├── BuildStatusButton.cs.meta
+│   │   │   │   │   │   ├── CollabHistoryDropDown.cs
+│   │   │   │   │   │   ├── CollabHistoryDropDown.cs.meta
+│   │   │   │   │   │   ├── CollabHistoryDropDownItem.cs
+│   │   │   │   │   │   ├── CollabHistoryDropDownItem.cs.meta
+│   │   │   │   │   │   ├── CollabHistoryItem.cs
+│   │   │   │   │   │   ├── CollabHistoryItem.cs.meta
+│   │   │   │   │   │   ├── CollabHistoryItemFactory.cs
+│   │   │   │   │   │   ├── CollabHistoryItemFactory.cs.meta
+│   │   │   │   │   │   ├── CollabHistoryRevisionLine.cs
+│   │   │   │   │   │   ├── CollabHistoryRevisionLine.cs.meta
+│   │   │   │   │   │   ├── HistoryProgressSpinner.cs
+│   │   │   │   │   │   ├── HistoryProgressSpinner.cs.meta
+│   │   │   │   │   │   ├── ICollabHistoryItemFactory.cs
+│   │   │   │   │   │   ├── ICollabHistoryItemFactory.cs.meta
+│   │   │   │   │   │   ├── PagedListView.cs
+│   │   │   │   │   │   ├── PagedListView.cs.meta
+│   │   │   │   │   │   ├── StatusView.cs
+│   │   │   │   │   │   └── StatusView.cs.meta
+│   │   │   │   │   └── Views.meta
+│   │   │   │   ├── Collab.meta
+│   │   │   │   ├── Resources
+│   │   │   │   │   ├── Styles
+│   │   │   │   │   │   ├── CollabHistoryCommon.uss
+│   │   │   │   │   │   ├── CollabHistoryCommon.uss.meta
+│   │   │   │   │   │   ├── CollabHistoryDark.uss
+│   │   │   │   │   │   ├── CollabHistoryDark.uss.meta
+│   │   │   │   │   │   ├── CollabHistoryLight.uss
+│   │   │   │   │   │   └── CollabHistoryLight.uss.meta
+│   │   │   │   │   └── Styles.meta
+│   │   │   │   ├── Resources.meta
+│   │   │   │   ├── Unity.CollabProxy.Editor.asmdef
+│   │   │   │   └── Unity.CollabProxy.Editor.asmdef.meta
+│   │   │   ├── Editor.meta
+│   │   │   ├── LICENSE.md
+│   │   │   ├── LICENSE.md.meta
+│   │   │   ├── README.md
+│   │   │   ├── README.md.meta
+│   │   │   ├── Tests
+│   │   │   │   ├── Editor
+│   │   │   │   │   ├── HistoryTests.cs
+│   │   │   │   │   ├── HistoryTests.cs.meta
+│   │   │   │   │   ├── Unity.CollabProxy.EditorTests.asmdef
+│   │   │   │   │   └── Unity.CollabProxy.EditorTests.asmdef.meta
+│   │   │   │   └── Editor.meta
+│   │   │   ├── Tests.meta
+│   │   │   ├── package.json
+│   │   │   └── package.json.meta
+│   │   ├── com.unity.ext.nunit@1.0.0
+│   │   │   ├── CHANGELOG.md
+│   │   │   ├── CHANGELOG.md.meta
+│   │   │   ├── Documentation~
+│   │   │   │   └── ext.nunit.md
+│   │   │   ├── LICENSE.md
+│   │   │   ├── LICENSE.md.meta
+│   │   │   ├── README.md
+│   │   │   ├── README.md.meta
+│   │   │   ├── net35
+│   │   │   │   ├── unity-custom
+│   │   │   │   │   ├── This\ is\ a\ custom\ build\ DONT\ include.txt
+│   │   │   │   │   ├── This\ is\ a\ custom\ build\ DONT\ include.txt.meta
+│   │   │   │   │   ├── nunit.framework.dll
+│   │   │   │   │   ├── nunit.framework.dll.mdb
+│   │   │   │   │   ├── nunit.framework.dll.mdb.meta
+│   │   │   │   │   ├── nunit.framework.dll.meta
+│   │   │   │   │   ├── nunit.framework.pdb
+│   │   │   │   │   ├── nunit.framework.pdb.meta
+│   │   │   │   │   ├── nunit.framework.xml
+│   │   │   │   │   └── nunit.framework.xml.meta
+│   │   │   │   └── unity-custom.meta
+│   │   │   ├── net35.meta
+│   │   │   ├── package.json
+│   │   │   └── package.json.meta
+│   │   ├── com.unity.ide.rider@1.1.0
+│   │   │   ├── CHANGELOG.md
+│   │   │   ├── CHANGELOG.md.meta
+│   │   │   ├── CONTRIBUTING.md
+│   │   │   ├── CONTRIBUTING.md.meta
+│   │   │   ├── Documentation~
+│   │   │   │   └── README.md
+│   │   │   ├── LICENSE.md
+│   │   │   ├── LICENSE.md.meta
+│   │   │   ├── Rider
+│   │   │   │   ├── Editor
+│   │   │   │   │   ├── Discovery.cs
+│   │   │   │   │   ├── Discovery.cs.meta
+│   │   │   │   │   ├── EditorPluginInterop.cs
+│   │   │   │   │   ├── EditorPluginInterop.cs.meta
+│   │   │   │   │   ├── LoggingLevel.cs
+│   │   │   │   │   ├── LoggingLevel.cs.meta
+│   │   │   │   │   ├── PluginSettings.cs
+│   │   │   │   │   ├── PluginSettings.cs.meta
+│   │   │   │   │   ├── ProjectGeneration.cs
+│   │   │   │   │   ├── ProjectGeneration.cs.meta
+│   │   │   │   │   ├── RiderInitializer.cs
+│   │   │   │   │   ├── RiderInitializer.cs.meta
+│   │   │   │   │   ├── RiderScriptEditor.cs
+│   │   │   │   │   ├── RiderScriptEditor.cs.meta
+│   │   │   │   │   ├── RiderScriptEditorData.cs
+│   │   │   │   │   ├── RiderScriptEditorData.cs.meta
+│   │   │   │   │   ├── Util
+│   │   │   │   │   │   ├── FileSystemUtil.cs
+│   │   │   │   │   │   ├── FileSystemUtil.cs.meta
+│   │   │   │   │   │   ├── LibcNativeInterop.cs
+│   │   │   │   │   │   ├── LibcNativeInterop.cs.meta
+│   │   │   │   │   │   ├── UnityUtils.cs
+│   │   │   │   │   │   └── UnityUtils.cs.meta
+│   │   │   │   │   ├── Util.meta
+│   │   │   │   │   ├── com.unity.ide.rider.asmdef
+│   │   │   │   │   └── com.unity.ide.rider.asmdef.meta
+│   │   │   │   └── Editor.meta
+│   │   │   ├── Rider.meta
+│   │   │   ├── package.json
+│   │   │   └── package.json.meta
+│   │   ├── com.unity.ide.vscode@1.1.2
+│   │   │   ├── CHANGELOG.md
+│   │   │   ├── CHANGELOG.md.meta
+│   │   │   ├── CONTRIBUTING.md
+│   │   │   ├── CONTRIBUTING.md.meta
+│   │   │   ├── Documentation~
+│   │   │   │   └── README.md
+│   │   │   ├── Editor
+│   │   │   │   ├── ProjectGeneration.cs
+│   │   │   │   ├── ProjectGeneration.cs.meta
+│   │   │   │   ├── Unity.com.unity.vscode.Editor.asmdef
+│   │   │   │   ├── Unity.com.unity.vscode.Editor.asmdef.meta
+│   │   │   │   ├── Utility.cs
+│   │   │   │   ├── Utility.cs.meta
+│   │   │   │   ├── VSCodeDiscovery.cs
+│   │   │   │   ├── VSCodeDiscovery.cs.meta
+│   │   │   │   ├── VSCodeScriptEditor.cs
+│   │   │   │   └── VSCodeScriptEditor.cs.meta
+│   │   │   ├── Editor.meta
+│   │   │   ├── LICENSE.md
+│   │   │   ├── LICENSE.md.meta
+│   │   │   ├── package.json
+│   │   │   └── package.json.meta
+│   │   ├── com.unity.test-framework@1.0.13
+│   │   │   ├── CHANGELOG.md
+│   │   │   ├── CHANGELOG.md.meta
+│   │   │   ├── CONTRIBUTING.md
+│   │   │   ├── CONTRIBUTING.md.meta
+│   │   │   ├── Documentation~
+│   │   │   │   ├── PlaymodeTestFramework.md
+│   │   │   │   ├── UnityTestRunner-0.png
+│   │   │   │   ├── UnityTestRunner-1.png
+│   │   │   │   ├── UnityTestRunner-2.png
+│   │   │   │   ├── UnityTestRunner-3.png
+│   │   │   │   ├── UnityTestRunner-4.png
+│   │   │   │   └── com.unity.test-framework.md
+│   │   │   ├── LICENSE.md
+│   │   │   ├── LICENSE.md.meta
+│   │   │   ├── UnityEditor.TestRunner
+│   │   │   │   ├── Api
+│   │   │   │   │   ├── CallbacksDelegator.cs
+│   │   │   │   │   ├── CallbacksDelegator.cs.meta
+│   │   │   │   │   ├── CallbacksDelegatorListener.cs
+│   │   │   │   │   ├── CallbacksDelegatorListener.cs.meta
+│   │   │   │   │   ├── CallbacksHolder.cs
+│   │   │   │   │   ├── CallbacksHolder.cs.meta
+│   │   │   │   │   ├── ExecutionSettings.cs
+│   │   │   │   │   ├── ExecutionSettings.cs.meta
+│   │   │   │   │   ├── Filter.cs
+│   │   │   │   │   ├── Filter.cs.meta
+│   │   │   │   │   ├── ICallbacks.cs
+│   │   │   │   │   ├── ICallbacks.cs.meta
+│   │   │   │   │   ├── ITestAdaptor.cs
+│   │   │   │   │   ├── ITestAdaptor.cs.meta
+│   │   │   │   │   ├── ITestAdaptorFactory.cs
+│   │   │   │   │   ├── ITestAdaptorFactory.cs.meta
+│   │   │   │   │   ├── ITestResultAdaptor.cs
+│   │   │   │   │   ├── ITestResultAdaptor.cs.meta
+│   │   │   │   │   ├── ITestRunSettings.cs
+│   │   │   │   │   ├── ITestRunSettings.cs.meta
+│   │   │   │   │   ├── ITestRunnerApi.cs
+│   │   │   │   │   ├── ITestRunnerApi.cs.meta
+│   │   │   │   │   ├── RunState.cs
+│   │   │   │   │   ├── RunState.cs.meta
+│   │   │   │   │   ├── TestAdaptor.cs
+│   │   │   │   │   ├── TestAdaptor.cs.meta
+│   │   │   │   │   ├── TestAdaptorFactory.cs
+│   │   │   │   │   ├── TestAdaptorFactory.cs.meta
+│   │   │   │   │   ├── TestLauncherFactory.cs
+│   │   │   │   │   ├── TestLauncherFactory.cs.meta
+│   │   │   │   │   ├── TestMode.cs
+│   │   │   │   │   ├── TestMode.cs.meta
+│   │   │   │   │   ├── TestResultAdaptor.cs
+│   │   │   │   │   ├── TestResultAdaptor.cs.meta
+│   │   │   │   │   ├── TestRunData.cs
+│   │   │   │   │   ├── TestRunData.cs.meta
+│   │   │   │   │   ├── TestRunnerApi.cs
+│   │   │   │   │   ├── TestRunnerApi.cs.meta
+│   │   │   │   │   ├── TestStatus.cs
+│   │   │   │   │   └── TestStatus.cs.meta
+│   │   │   │   ├── Api.meta
+│   │   │   │   ├── AssemblyInfo.cs
+│   │   │   │   ├── AssemblyInfo.cs.meta
+│   │   │   │   ├── CommandLineParser
+│   │   │   │   │   ├── CommandLineOption.cs
+│   │   │   │   │   ├── CommandLineOption.cs.meta
+│   │   │   │   │   ├── CommandLineOptionSet.cs
+│   │   │   │   │   ├── CommandLineOptionSet.cs.meta
+│   │   │   │   │   ├── ICommandLineOption.cs
+│   │   │   │   │   └── ICommandLineOption.cs.meta
+│   │   │   │   ├── CommandLineParser.meta
+│   │   │   │   ├── CommandLineTest
+│   │   │   │   │   ├── Executer.cs
+│   │   │   │   │   ├── Executer.cs.meta
+│   │   │   │   │   ├── ExecutionSettings.cs
+│   │   │   │   │   ├── ExecutionSettings.cs.meta
+│   │   │   │   │   ├── ExitCallbacks.cs
+│   │   │   │   │   ├── ExitCallbacks.cs.meta
+│   │   │   │   │   ├── ISettingsBuilder.cs
+│   │   │   │   │   ├── ISettingsBuilder.cs.meta
+│   │   │   │   │   ├── LogSavingCallbacks.cs
+│   │   │   │   │   ├── LogSavingCallbacks.cs.meta
+│   │   │   │   │   ├── LogWriter.cs
+│   │   │   │   │   ├── LogWriter.cs.meta
+│   │   │   │   │   ├── ResultsSavingCallbacks.cs
+│   │   │   │   │   ├── ResultsSavingCallbacks.cs.meta
+│   │   │   │   │   ├── ResultsWriter.cs
+│   │   │   │   │   ├── ResultsWriter.cs.meta
+│   │   │   │   │   ├── RunData.cs
+│   │   │   │   │   ├── RunData.cs.meta
+│   │   │   │   │   ├── RunSettings.cs
+│   │   │   │   │   ├── RunSettings.cs.meta
+│   │   │   │   │   ├── SettingsBuilder.cs
+│   │   │   │   │   ├── SettingsBuilder.cs.meta
+│   │   │   │   │   ├── SetupException.cs
+│   │   │   │   │   ├── SetupException.cs.meta
+│   │   │   │   │   ├── TestStarter.cs
+│   │   │   │   │   ├── TestStarter.cs.meta
+│   │   │   │   │   ├── TimeoutCallbacks.cs
+│   │   │   │   │   └── TimeoutCallbacks.cs.meta
+│   │   │   │   ├── CommandLineTest.meta
+│   │   │   │   ├── GUI
+│   │   │   │   │   ├── AssetsDatabaseHelper.cs
+│   │   │   │   │   ├── AssetsDatabaseHelper.cs.meta
+│   │   │   │   │   ├── GuiHelper.cs
+│   │   │   │   │   ├── GuiHelper.cs.meta
+│   │   │   │   │   ├── IAssetsDatabaseHelper.cs
+│   │   │   │   │   ├── IAssetsDatabaseHelper.cs.meta
+│   │   │   │   │   ├── IGuiHelper.cs
+│   │   │   │   │   ├── IGuiHelper.cs.meta
+│   │   │   │   │   ├── TestListBuilder
+│   │   │   │   │   │   ├── RenderingOptions.cs
+│   │   │   │   │   │   ├── RenderingOptions.cs.meta
+│   │   │   │   │   │   ├── ResultSummarizer.cs
+│   │   │   │   │   │   ├── ResultSummarizer.cs.meta
+│   │   │   │   │   │   ├── TestFilterSettings.cs
+│   │   │   │   │   │   ├── TestFilterSettings.cs.meta
+│   │   │   │   │   │   ├── TestTreeViewBuilder.cs
+│   │   │   │   │   │   └── TestTreeViewBuilder.cs.meta
+│   │   │   │   │   ├── TestListBuilder.meta
+│   │   │   │   │   ├── TestListGuiHelper.cs
+│   │   │   │   │   ├── TestListGuiHelper.cs.meta
+│   │   │   │   │   ├── TestListTreeView
+│   │   │   │   │   │   ├── Icons.cs
+│   │   │   │   │   │   ├── Icons.cs.meta
+│   │   │   │   │   │   ├── TestListTreeViewDataSource.cs
+│   │   │   │   │   │   ├── TestListTreeViewDataSource.cs.meta
+│   │   │   │   │   │   ├── TestListTreeViewGUI.cs
+│   │   │   │   │   │   ├── TestListTreeViewGUI.cs.meta
+│   │   │   │   │   │   ├── TestTreeViewItem.cs
+│   │   │   │   │   │   └── TestTreeViewItem.cs.meta
+│   │   │   │   │   ├── TestListTreeView.meta
+│   │   │   │   │   ├── TestRunnerResult.cs
+│   │   │   │   │   ├── TestRunnerResult.cs.meta
+│   │   │   │   │   ├── TestRunnerUIFilter.cs
+│   │   │   │   │   ├── TestRunnerUIFilter.cs.meta
+│   │   │   │   │   ├── Views
+│   │   │   │   │   │   ├── EditModeTestListGUI.cs
+│   │   │   │   │   │   ├── EditModeTestListGUI.cs.meta
+│   │   │   │   │   │   ├── PlayModeTestListGUI.cs
+│   │   │   │   │   │   ├── PlayModeTestListGUI.cs.meta
+│   │   │   │   │   │   ├── TestListGUIBase.cs
+│   │   │   │   │   │   └── TestListGUIBase.cs.meta
+│   │   │   │   │   └── Views.meta
+│   │   │   │   ├── GUI.meta
+│   │   │   │   ├── NUnitExtension
+│   │   │   │   │   ├── Attributes
+│   │   │   │   │   │   ├── AssetPipelineIgnore.cs
+│   │   │   │   │   │   └── AssetPipelineIgnore.cs.meta
+│   │   │   │   │   ├── Attributes.meta
+│   │   │   │   │   ├── TestRunnerStateSerializer.cs
+│   │   │   │   │   └── TestRunnerStateSerializer.cs.meta
+│   │   │   │   ├── NUnitExtension.meta
+│   │   │   │   ├── RequireApiProfileAttribute.cs
+│   │   │   │   ├── RequireApiProfileAttribute.cs.meta
+│   │   │   │   ├── RequirePlatformSupportAttribute.cs
+│   │   │   │   ├── RequirePlatformSupportAttribute.cs.meta
+│   │   │   │   ├── TestBuildAssemblyFilter.cs
+│   │   │   │   ├── TestBuildAssemblyFilter.cs.meta
+│   │   │   │   ├── TestLaunchers
+│   │   │   │   │   ├── AttributeFinderBase.cs
+│   │   │   │   │   ├── AttributeFinderBase.cs.meta
+│   │   │   │   │   ├── EditModeLauncher.cs
+│   │   │   │   │   ├── EditModeLauncher.cs.meta
+│   │   │   │   │   ├── EditModeLauncherContextSettings.cs
+│   │   │   │   │   ├── EditModeLauncherContextSettings.cs.meta
+│   │   │   │   │   ├── PlatformSetup
+│   │   │   │   │   │   ├── AndroidPlatformSetup.cs
+│   │   │   │   │   │   ├── AndroidPlatformSetup.cs.meta
+│   │   │   │   │   │   ├── ApplePlatformSetup.cs
+│   │   │   │   │   │   ├── ApplePlatformSetup.cs.meta
+│   │   │   │   │   │   ├── IPlatformSetup.cs
+│   │   │   │   │   │   ├── IPlatformSetup.cs.meta
+│   │   │   │   │   │   ├── LuminPlatformSetup.cs
+│   │   │   │   │   │   ├── LuminPlatformSetup.cs.meta
+│   │   │   │   │   │   ├── PlatformSpecificSetup.cs
+│   │   │   │   │   │   ├── PlatformSpecificSetup.cs.meta
+│   │   │   │   │   │   ├── SwitchPlatformSetup.cs
+│   │   │   │   │   │   ├── SwitchPlatformSetup.cs.meta
+│   │   │   │   │   │   ├── UwpPlatformSetup.cs
+│   │   │   │   │   │   ├── UwpPlatformSetup.cs.meta
+│   │   │   │   │   │   ├── XboxOnePlatformSetup.cs
+│   │   │   │   │   │   └── XboxOnePlatformSetup.cs.meta
+│   │   │   │   │   ├── PlatformSetup.meta
+│   │   │   │   │   ├── PlayerLauncher.cs
+│   │   │   │   │   ├── PlayerLauncher.cs.meta
+│   │   │   │   │   ├── PlayerLauncherBuildOptions.cs
+│   │   │   │   │   ├── PlayerLauncherBuildOptions.cs.meta
+│   │   │   │   │   ├── PlayerLauncherContextSettings.cs
+│   │   │   │   │   ├── PlayerLauncherContextSettings.cs.meta
+│   │   │   │   │   ├── PlaymodeLauncher.cs
+│   │   │   │   │   ├── PlaymodeLauncher.cs.meta
+│   │   │   │   │   ├── PostbuildCleanupAttributeFinder.cs
+│   │   │   │   │   ├── PostbuildCleanupAttributeFinder.cs.meta
+│   │   │   │   │   ├── PrebuildSetupAttributeFinder.cs
+│   │   │   │   │   ├── PrebuildSetupAttributeFinder.cs.meta
+│   │   │   │   │   ├── RemotePlayerLogController.cs
+│   │   │   │   │   ├── RemotePlayerLogController.cs.meta
+│   │   │   │   │   ├── RemotePlayerTestController.cs
+│   │   │   │   │   ├── RemotePlayerTestController.cs.meta
+│   │   │   │   │   ├── RemoteTestResultReciever.cs
+│   │   │   │   │   ├── RemoteTestResultReciever.cs.meta
+│   │   │   │   │   ├── RuntimeTestLauncherBase.cs
+│   │   │   │   │   ├── RuntimeTestLauncherBase.cs.meta
+│   │   │   │   │   ├── TestLauncherBase.cs
+│   │   │   │   │   └── TestLauncherBase.cs.meta
+│   │   │   │   ├── TestLaunchers.meta
+│   │   │   │   ├── TestResultSerializer.cs
+│   │   │   │   ├── TestResultSerializer.cs.meta
+│   │   │   │   ├── TestRunner
+│   │   │   │   │   ├── Callbacks
+│   │   │   │   │   │   ├── EditModeRunnerCallback.cs
+│   │   │   │   │   │   ├── EditModeRunnerCallback.cs.meta
+│   │   │   │   │   │   ├── RerunCallback.cs
+│   │   │   │   │   │   ├── RerunCallback.cs.meta
+│   │   │   │   │   │   ├── RerunCallbackData.cs
+│   │   │   │   │   │   ├── RerunCallbackData.cs.meta
+│   │   │   │   │   │   ├── RerunCallbackInitializer.cs
+│   │   │   │   │   │   ├── RerunCallbackInitializer.cs.meta
+│   │   │   │   │   │   ├── TestRunnerCallback.cs
+│   │   │   │   │   │   ├── TestRunnerCallback.cs.meta
+│   │   │   │   │   │   ├── WindowResultUpdater.cs
+│   │   │   │   │   │   └── WindowResultUpdater.cs.meta
+│   │   │   │   │   ├── Callbacks.meta
+│   │   │   │   │   ├── EditModePCHelper.cs
+│   │   │   │   │   ├── EditModePCHelper.cs.meta
+│   │   │   │   │   ├── EditModeRunner.cs
+│   │   │   │   │   ├── EditModeRunner.cs.meta
+│   │   │   │   │   ├── EditmodeWorkItemFactory.cs
+│   │   │   │   │   ├── EditmodeWorkItemFactory.cs.meta
+│   │   │   │   │   ├── EditorEnumeratorTestWorkItem.cs
+│   │   │   │   │   ├── EditorEnumeratorTestWorkItem.cs.meta
+│   │   │   │   │   ├── EnumeratorStepHelper.cs
+│   │   │   │   │   ├── EnumeratorStepHelper.cs.meta
+│   │   │   │   │   ├── Messages
+│   │   │   │   │   │   ├── EnterPlayMode.cs
+│   │   │   │   │   │   ├── EnterPlayMode.cs.meta
+│   │   │   │   │   │   ├── ExitPlayMode.cs
+│   │   │   │   │   │   ├── ExitPlayMode.cs.meta
+│   │   │   │   │   │   ├── RecompileScripts.cs
+│   │   │   │   │   │   ├── RecompileScripts.cs.meta
+│   │   │   │   │   │   ├── WaitForDomainReload.cs
+│   │   │   │   │   │   └── WaitForDomainReload.cs.meta
+│   │   │   │   │   ├── Messages.meta
+│   │   │   │   │   ├── TestFileCleanupVerifier.cs
+│   │   │   │   │   ├── TestFileCleanupVerifier.cs.meta
+│   │   │   │   │   ├── Utils
+│   │   │   │   │   └── Utils.meta
+│   │   │   │   ├── TestRunner.meta
+│   │   │   │   ├── TestRunnerWindow.cs
+│   │   │   │   ├── TestRunnerWindow.cs.meta
+│   │   │   │   ├── TestRunnerWindowSettings.cs
+│   │   │   │   ├── TestRunnerWindowSettings.cs.meta
+│   │   │   │   ├── TestSettings
+│   │   │   │   │   ├── ITestSettings.cs
+│   │   │   │   │   ├── ITestSettings.cs.meta
+│   │   │   │   │   ├── ITestSettingsDeserializer.cs
+│   │   │   │   │   ├── ITestSettingsDeserializer.cs.meta
+│   │   │   │   │   ├── TestSettings.cs
+│   │   │   │   │   ├── TestSettings.cs.meta
+│   │   │   │   │   ├── TestSettingsDeserializer.cs
+│   │   │   │   │   └── TestSettingsDeserializer.cs.meta
+│   │   │   │   ├── TestSettings.meta
+│   │   │   │   ├── UnityEditor.TestRunner.asmdef
+│   │   │   │   ├── UnityEditor.TestRunner.asmdef.meta
+│   │   │   │   ├── UnityTestProtocol
+│   │   │   │   └── UnityTestProtocol.meta
+│   │   │   ├── UnityEditor.TestRunner.meta
+│   │   │   ├── UnityEngine.TestRunner
+│   │   │   │   ├── AssemblyInfo.cs
+│   │   │   │   ├── AssemblyInfo.cs.meta
+│   │   │   │   ├── Assertions
+│   │   │   │   ├── Assertions.meta
+│   │   │   │   ├── NUnitExtensions
+│   │   │   │   │   ├── ActionDelegator.cs
+│   │   │   │   │   ├── ActionDelegator.cs.meta
+│   │   │   │   │   ├── Attributes
+│   │   │   │   │   ├── Attributes.meta
+│   │   │   │   │   ├── BaseDelegator.cs
+│   │   │   │   │   ├── BaseDelegator.cs.meta
+│   │   │   │   │   ├── Commands
+│   │   │   │   │   ├── Commands.meta
+│   │   │   │   │   ├── ConstructDelegator.cs
+│   │   │   │   │   ├── ConstructDelegator.cs.meta
+│   │   │   │   │   ├── Filters
+│   │   │   │   │   │   ├── AssemblyNameFilter.cs
+│   │   │   │   │   │   ├── AssemblyNameFilter.cs.meta
+│   │   │   │   │   │   ├── CategoryFilterExtended.cs
+│   │   │   │   │   │   └── CategoryFilterExtended.cs.meta
+│   │   │   │   │   ├── Filters.meta
+│   │   │   │   │   ├── IStateSerializer.cs
+│   │   │   │   │   ├── IStateSerializer.cs.meta
+│   │   │   │   │   ├── Runner
+│   │   │   │   │   ├── Runner.meta
+│   │   │   │   │   ├── TestExtensions.cs
+│   │   │   │   │   ├── TestExtensions.cs.meta
+│   │   │   │   │   ├── TestResultExtensions.cs
+│   │   │   │   │   ├── TestResultExtensions.cs.meta
+│   │   │   │   │   ├── UnityTestAssemblyBuilder.cs
+│   │   │   │   │   └── UnityTestAssemblyBuilder.cs.meta
+│   │   │   │   ├── NUnitExtensions.meta
+│   │   │   │   ├── TestRunner
+│   │   │   │   │   ├── Callbacks
+│   │   │   │   │   │   ├── PlayModeRunnerCallback.cs
+│   │   │   │   │   │   ├── PlayModeRunnerCallback.cs.meta
+│   │   │   │   │   │   ├── RemoteTestResultSender.cs
+│   │   │   │   │   │   ├── RemoteTestResultSender.cs.meta
+│   │   │   │   │   │   ├── TestResultRenderer.cs
+│   │   │   │   │   │   ├── TestResultRenderer.cs.meta
+│   │   │   │   │   │   ├── TestResultRendererCallback.cs
+│   │   │   │   │   │   └── TestResultRendererCallback.cs.meta
+│   │   │   │   │   ├── Callbacks.meta
+│   │   │   │   │   ├── ITestRunnerListener.cs
+│   │   │   │   │   ├── ITestRunnerListener.cs.meta
+│   │   │   │   │   ├── Messages
+│   │   │   │   │   │   ├── IEditModeTestYieldInstruction.cs
+│   │   │   │   │   │   └── IEditModeTestYieldInstruction.cs.meta
+│   │   │   │   │   ├── Messages.meta
+│   │   │   │   │   ├── PlaymodeTestsController.cs
+│   │   │   │   │   ├── PlaymodeTestsController.cs.meta
+│   │   │   │   │   ├── PlaymodeTestsControllerSettings.cs
+│   │   │   │   │   ├── PlaymodeTestsControllerSettings.cs.meta
+│   │   │   │   │   ├── RemoteHelpers
+│   │   │   │   │   │   ├── IRemoteTestResultDataFactory.cs
+│   │   │   │   │   │   ├── IRemoteTestResultDataFactory.cs.meta
+│   │   │   │   │   │   ├── PlayerConnectionMessageIds.cs
+│   │   │   │   │   │   ├── PlayerConnectionMessageIds.cs.meta
+│   │   │   │   │   │   ├── RemoteTestData.cs
+│   │   │   │   │   │   ├── RemoteTestData.cs.meta
+│   │   │   │   │   │   ├── RemoteTestResultData.cs
+│   │   │   │   │   │   ├── RemoteTestResultData.cs.meta
+│   │   │   │   │   │   ├── RemoteTestResultDataFactory.cs
+│   │   │   │   │   │   ├── RemoteTestResultDataFactory.cs.meta
+│   │   │   │   │   │   ├── RemoteTestResultDataWithTestData.cs
+│   │   │   │   │   │   └── RemoteTestResultDataWithTestData.cs.meta
+│   │   │   │   │   ├── RemoteHelpers.meta
+│   │   │   │   │   ├── TestEnumeratorWrapper.cs
+│   │   │   │   │   ├── TestEnumeratorWrapper.cs.meta
+│   │   │   │   │   ├── TestListenerWrapper.cs
+│   │   │   │   │   ├── TestListenerWrapper.cs.meta
+│   │   │   │   │   ├── TestPlatform.cs
+│   │   │   │   │   ├── TestPlatform.cs.meta
+│   │   │   │   │   ├── TestRunnerFilter.cs
+│   │   │   │   │   └── TestRunnerFilter.cs.meta
+│   │   │   │   ├── TestRunner.meta
+│   │   │   │   ├── UnityEngine.TestRunner.asmdef
+│   │   │   │   ├── UnityEngine.TestRunner.asmdef.meta
+│   │   │   │   ├── Utils
+│   │   │   │   └── Utils.meta
+│   │   │   ├── UnityEngine.TestRunner.meta
+│   │   │   ├── package.json
+│   │   │   └── package.json.meta
+│   │   └── com.unity.textmeshpro@2.0.1
+│   │       ├── CHANGELOG.md
+│   │       ├── CHANGELOG.md.meta
+│   │       ├── Documentation~
+│   │       │   ├── TextMeshPro.md
+│   │       │   └── TextMeshPro.md.meta
+│   │       ├── Editor\ Resources
+│   │       │   ├── Gizmos
+│   │       │   │   ├── TMP\ -\ Dropdown\ Icon.psd
+│   │       │   │   ├── TMP\ -\ Dropdown\ Icon.psd.meta
+│   │       │   │   ├── TMP\ -\ Font\ Asset\ Icon.psd
+│   │       │   │   ├── TMP\ -\ Font\ Asset\ Icon.psd.meta
+│   │       │   │   ├── TMP\ -\ Input\ Field\ Icon.psd
+│   │       │   │   ├── TMP\ -\ Input\ Field\ Icon.psd.meta
+│   │       │   │   ├── TMP\ -\ Sprite\ Asset\ Icon.psd
+│   │       │   │   ├── TMP\ -\ Sprite\ Asset\ Icon.psd.meta
+│   │       │   │   ├── TMP\ -\ Text\ Component\ Icon.psd
+│   │       │   │   └── TMP\ -\ Text\ Component\ Icon.psd.meta
+│   │       │   ├── Gizmos.meta
+│   │       │   ├── Shaders
+│   │       │   │   ├── TMP_Properties.cginc
+│   │       │   │   ├── TMP_Properties.cginc.meta
+│   │       │   │   ├── TMP_SDF\ Internal\ SSD.shader
+│   │       │   │   └── TMP_SDF\ Internal\ SSD.shader.meta
+│   │       │   ├── Shaders.meta
+│   │       │   ├── Textures
+│   │       │   └── Textures.meta
+│   │       ├── Editor\ Resources.meta
+│   │       ├── LICENSE.md
+│   │       ├── LICENSE.md.meta
+│   │       ├── Package\ Resources
+│   │       │   ├── TMP\ Essential\ Resources.unitypackage
+│   │       │   ├── TMP\ Essential\ Resources.unitypackage.meta
+│   │       │   ├── TMP\ Examples\ &\ Extras.unitypackage
+│   │       │   └── TMP\ Examples\ &\ Extras.unitypackage.meta
+│   │       ├── Package\ Resources.meta
+│   │       ├── PackageConversionData.json
+│   │       ├── PackageConversionData.json.meta
+│   │       ├── PackageConversionData_Assets.json
+│   │       ├── PackageConversionData_Assets.json.meta
+│   │       ├── Scripts
+│   │       │   ├── Editor
+│   │       │   ├── Editor.meta
+│   │       │   ├── Runtime
+│   │       │   └── Runtime.meta
+│   │       ├── Scripts.meta
+│   │       ├── Tests
+│   │       │   ├── Editor
+│   │       │   │   ├── TMP_EditorTests.cs
+│   │       │   │   ├── TMP_EditorTests.cs.meta
+│   │       │   │   ├── Unity.TextMeshPro.Editor.Tests.asmdef
+│   │       │   │   └── Unity.TextMeshPro.Editor.Tests.asmdef.meta
+│   │       │   ├── Editor.meta
+│   │       │   ├── Runtime
+│   │       │   │   ├── TMP_RuntimeTests.cs
+│   │       │   │   ├── TMP_RuntimeTests.cs.meta
+│   │       │   │   ├── Unity.TextMeshPro.Tests.asmdef
+│   │       │   │   └── Unity.TextMeshPro.Tests.asmdef.meta
+│   │       │   └── Runtime.meta
+│   │       ├── Tests.meta
+│   │       ├── package.json
+│   │       └── package.json.meta
+│   ├── PlayerDataCache
+│   ├── ProjectSettings\ 2.asset
+│   ├── ProjectSettings.asset
+│   ├── SceneVisibilityState.asset
+│   ├── ScriptAssemblies
+│   ├── ScriptMapper
+├── Logs
+│   └── Packages-Update.log
+├── Mac\ Input
+│   └── InputManager.asset
+├── Packages
+│   └── manifest.json
+├── ProjectSettings
+│   ├── AudioManager.asset
+│   ├── ClusterInputManager.asset
+│   ├── DynamicsManager.asset
+│   ├── EditorBuildSettings.asset
+│   ├── EditorSettings.asset
+│   ├── GraphicsSettings.asset
+│   ├── InputManager.asset
+│   ├── NavMeshAreas.asset
+│   ├── NetworkManager.asset
+│   ├── Physics2DSettings.asset
+│   ├── PresetManager.asset
+│   ├── ProjectSettings.asset
+│   ├── ProjectVersion.txt
+│   ├── QualitySettings.asset
+│   ├── TagManager.asset
+│   ├── TimeManager.asset
+│   ├── UnityConnectSettings.asset
+│   ├── VFXManager.asset
+│   └── XRSettings.asset
+├── Windows\ Input
+│   └── InputManager.asset
+└── obj
+    └── Debug
+        └── Assembly-CSharp.csprojAssemblyReference.cache
+
+
+File System Loaded
+Welcome to
