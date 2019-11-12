@@ -19,7 +19,6 @@ public class MouseCursorHTP : MonoBehaviour
 
         // Update is called once per frame
         void Update() {
-            int previousLevel = PlayerPrefs.GetInt("previousLevel");
 
             Vector3 movement = new Vector3(Input.GetAxis("MoveHorizontal"), Input.GetAxis("MoveVerticle"),0.0f);
             transform.position = transform.position + movement * Time.deltaTime * speed;
@@ -29,8 +28,10 @@ public class MouseCursorHTP : MonoBehaviour
                 Collider2D hitBack = Physics2D.OverlapPoint(transform.position + movement * Time.deltaTime, Back_Layers.value);
                 
                 if (hitBack != null && hitBack.transform != null) {
-                    Debug.Log("Going Back");
+                    int previousLevel = PlayerPrefs.GetInt("previousLevel");
+
                     SceneManager.LoadScene(previousLevel);
+
                 } else {
 
 

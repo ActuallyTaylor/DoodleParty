@@ -21,10 +21,7 @@ public class MouseCursorVoting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        player1.text = PlayerPrefs.GetString("Player1Catagory");
-        player2.text = PlayerPrefs.GetString("Player2Catagory");
-        player3.text = PlayerPrefs.GetString("Player3Catagory");
-        player4.text = PlayerPrefs.GetString("Player4Catagory");
+
 
         Vector3 movement = new Vector3 (Input.GetAxis ("MoveHorizontal"), Input.GetAxis ("MoveVerticle"), 0.0f);
         transform.position = transform.position + movement * Time.deltaTime * speed;
@@ -52,6 +49,25 @@ public class MouseCursorVoting : MonoBehaviour
             SceneManager.LoadScene (5);
 
         }
-        
+
+        int amountOfPlayers = PlayerPrefs.GetInt("amountOfPlayers");
+
+        if (amountOfPlayers == 2) {
+            player1.text = PlayerPrefs.GetString("Player1Catagory");
+            player2.text = PlayerPrefs.GetString("Player2Catagory");
+            player3.text = "N/A";
+            player4.text = "N/A";
+        } else if (amountOfPlayers == 3) {
+            player1.text = PlayerPrefs.GetString("Player1Catagory");
+            player2.text = PlayerPrefs.GetString("Player2Catagory");
+            player3.text = PlayerPrefs.GetString("Player3Catagory");
+            player4.text = "N/A";          
+        } else if (amountOfPlayers == 4) {
+            player1.text = PlayerPrefs.GetString("Player1Catagory");
+            player2.text = PlayerPrefs.GetString("Player2Catagory");
+            player3.text = PlayerPrefs.GetString("Player3Catagory");
+            player4.text = PlayerPrefs.GetString("Player4Catagory");
+        }
+
     }
 }
