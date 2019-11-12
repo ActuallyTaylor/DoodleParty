@@ -637,7 +637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   catagoryText: {fileID: 1676071879}
   timeText: {fileID: 1749865998}
-  waitTime: 5
+  waitTime: 3
 --- !u!1 &2070357249
 GameObject:
   m_ObjectHideFlags: 0

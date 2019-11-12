@@ -984,7 +984,7 @@ MonoBehaviour:
     m_Bits: 512
   DrawArea: {fileID: 789623248}
   DrawSettings: {fileID: 789623249}
-  speed: 4
+  speed: 3
   click: 0
   animator: {fileID: 206605765}
   menu: {fileID: 1064434628}
@@ -996,8 +996,9 @@ MonoBehaviour:
     m_Bits: 8192
   targetTime: 1.5
   drawing: 0
-  waitTime: 10
+  waitTime: 5
   gameOver: 0
+  paused: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

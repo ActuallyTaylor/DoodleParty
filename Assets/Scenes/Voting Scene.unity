@@ -414,7 +414,7 @@ GameObject:
   - component: {fileID: 348219075}
   - component: {fileID: 348219074}
   m_Layer: 5
-  m_Name: Text (TMP) (4)
+  m_Name: Player3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: 442102533}
   - component: {fileID: 442102532}
   m_Layer: 5
-  m_Name: Text (TMP) (3)
+  m_Name: Player2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -898,6 +898,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  player1Cat: {fileID: 1534533341}
+  player2Cat: {fileID: 442102532}
+  player3Cat: {fileID: 348219074}
+  player4Cat: {fileID: 1775099257}
 --- !u!212 &980344736
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1181,7 +1185,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Vote on whose catagory the drawing  looks the most like
+  m_text: Vote on what catagory the drawing  looks the most like
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1cd8a1a64ba1fa54f87bcffced714448, type: 2}
   m_sharedMaterial: {fileID: 7053596229606372522, guid: 1cd8a1a64ba1fa54f87bcffced714448,
@@ -1251,7 +1255,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1250894228}
-    characterCount: 55
+    characterCount: 54
     spriteCount: 0
     spaceCount: 10
     wordCount: 10
@@ -1374,7 +1378,7 @@ GameObject:
   - component: {fileID: 1534533342}
   - component: {fileID: 1534533341}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Player1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1766,7 +1770,7 @@ GameObject:
   - component: {fileID: 1775099258}
   - component: {fileID: 1775099257}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: Player4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
