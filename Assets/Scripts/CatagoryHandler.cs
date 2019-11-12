@@ -33,6 +33,12 @@ public class CatagoryHandler : MonoBehaviour
         int amountOfPlayers = PlayerPrefs.GetInt("amountOfPlayers");
         waitTime -= Time.deltaTime;
         timeText.text = "Time till next player category... " + (int)waitTime;
+
+        if(Input.GetButtonDown("Draw")) {
+            waitTime = 0.0f;
+            print("Oops");
+        }
+
         if (waitTime <= 0.0f)
         {
             currentPlayer ++;

@@ -984,7 +984,7 @@ MonoBehaviour:
     m_Bits: 512
   DrawArea: {fileID: 789623248}
   DrawSettings: {fileID: 789623249}
-  speed: 3
+  speed: 4
   click: 0
   animator: {fileID: 206605765}
   menu: {fileID: 1064434628}

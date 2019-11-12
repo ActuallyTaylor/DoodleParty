@@ -53,7 +53,7 @@ namespace FreeDraw
             waitTime = PlayerPrefs.GetFloat("WaitTime");
             gameOver = false;
 
-            turnCount = amountOfPlayers * 1;
+            turnCount = amountOfPlayers * 5;
             
         }
 
@@ -260,11 +260,13 @@ namespace FreeDraw
             {
                 onCanvas = true;
                 sr.enabled = true;
+                speed = 3;
             }
             else
             {
                 onCanvas = false;
                 sr.enabled = false;
+                speed = 4;
             }
         }
         public void changeMarkerSize()
