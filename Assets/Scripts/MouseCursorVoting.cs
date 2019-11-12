@@ -68,6 +68,35 @@ public class MouseCursorVoting : MonoBehaviour
             player3.text = PlayerPrefs.GetString("Player3Catagory");
             player4.text = PlayerPrefs.GetString("Player4Catagory");
         }
+                
+        int player1score = PlayerPrefs.GetInt("Player1Score");
+        int player2score = PlayerPrefs.GetInt("Player2Score");
+        int player3score = PlayerPrefs.GetInt("Player3Score");
+        int player4score = PlayerPrefs.GetInt("Player4Score");
+        int infiniteMode = PlayerPrefs.GetInt("InfiniteMode");
 
+        if (player1score >= 5 && infiniteMode != 1) {
+            PlayerPrefs.SetInt("Winner",1);
+            SceneManager.LoadScene(6);
+
+        }
+    
+        if (player2score >= 5 && infiniteMode != 1) {
+            PlayerPrefs.SetInt("Winner",2);
+            SceneManager.LoadScene(6);
+
+        }   
+
+        if (player3score >= 5 && infiniteMode != 1) {
+            PlayerPrefs.SetInt("Winner",3);
+            SceneManager.LoadScene(6);
+
+        }    
+        
+        if (player4score >= 5 && infiniteMode != 1) {
+            PlayerPrefs.SetInt("Winner",4);
+            SceneManager.LoadScene(6);
+
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ScoreHandler : MonoBehaviour
 {
@@ -65,20 +66,6 @@ public class ScoreHandler : MonoBehaviour
         player2score.text = PlayerPrefs.GetInt("Player2Score").ToString();
         player3score.text = PlayerPrefs.GetInt("Player3Score").ToString();
         player4score.text = PlayerPrefs.GetInt("Player4Score").ToString();
-        if (player1 >= 5) {
 
-        }
-    
-        if (player2 >= 5) {
-
-        }   
-
-        if (player3 >= 5) {
-
-        }    
-        
-        if (player4 >= 5) {
-
-        }
     }
 }

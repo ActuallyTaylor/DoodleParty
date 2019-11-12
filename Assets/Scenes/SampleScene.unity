@@ -994,7 +994,7 @@ MonoBehaviour:
   Settings_Layers:
     serializedVersion: 2
     m_Bits: 8192
-  targetTime: 1.5
+  targetTime: 3
   drawing: 0
   waitTime: 10
   gameOver: 0

@@ -26,6 +26,7 @@ namespace FreeDraw {
             PlayerPrefs.SetInt("Player3Score", 0);
             PlayerPrefs.SetInt("Player4Score", 0);
             PlayerPrefs.SetInt("amountOfPlayers", 2);
+            PlayerPrefs.SetInt("InfiniteMode", 0);
 
 
         }

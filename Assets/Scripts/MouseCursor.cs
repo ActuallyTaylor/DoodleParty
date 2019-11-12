@@ -53,7 +53,7 @@ namespace FreeDraw
             waitTime = PlayerPrefs.GetFloat("WaitTime");
             gameOver = false;
 
-            turnCount = amountOfPlayers * 3;
+            turnCount = amountOfPlayers * 1;
             
         }
 
@@ -66,6 +66,7 @@ namespace FreeDraw
             
             if (turnCount <= 0)
             {
+                print("Game Over");
                 gameOver = true;
             }
 
@@ -73,7 +74,7 @@ namespace FreeDraw
                 SceneManager.LoadScene (4);
 
             }
-
+            
             if (!waiting && turnCount >= 0 && !gameOver && !paused)
             {
 
@@ -113,6 +114,7 @@ namespace FreeDraw
             }
             */
         }
+
         public void pause() {
             if (Input.GetButtonDown("Pause")) {
                 counter++;
@@ -306,6 +308,7 @@ namespace FreeDraw
                 markerSize = 2;
             }
         }
+
         public void turnEnded()
         {
             int amountOfPlayers = PlayerPrefs.GetInt("amountOfPlayers");
