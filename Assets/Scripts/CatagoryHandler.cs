@@ -22,7 +22,9 @@ public class CatagoryHandler : MonoBehaviour
         int amountOfPlayers = PlayerPrefs.GetInt("amountOfPlayers");
         string randomString = catagories[Random.Range (0, catagories.Length)];
         catagoryText.text = "Player 1 your Catagory is: " + randomString;
-        
+        PlayerPrefs.SetString("Player1Catagory",randomString);
+        print(PlayerPrefs.GetString("Player1Catagory"));
+
     }
 
     // Update is called once per frame
@@ -34,7 +36,7 @@ public class CatagoryHandler : MonoBehaviour
         if (waitTime <= 0.0f)
         {
             currentPlayer ++;
-            
+            print(currentPlayer);
             if (currentPlayer > amountOfPlayers) {
                 SceneManager.LoadScene (1);
             }
@@ -42,6 +44,8 @@ public class CatagoryHandler : MonoBehaviour
             string randomString = catagories[Random.Range (0, catagories.Length)];
             catagoryText.text = "Player " + currentPlayer + " your Catagory is: " + randomString;
             waitTime = 10.0f;
+            PlayerPrefs.SetString("Player" + currentPlayer +"Catagory",randomString);
+            print(PlayerPrefs.GetString("Player" + currentPlayer +"Catagory"));
         }
 
     }

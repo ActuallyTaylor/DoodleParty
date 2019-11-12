@@ -31,6 +31,8 @@ namespace FreeDraw
         private bool waiting = false;
         public float waitTime;
         public bool gameOver = false;
+        public bool paused = false;
+        private int counter = 0;
 
         // Start is called before the first frame update
         void Start()
@@ -61,7 +63,7 @@ namespace FreeDraw
             Vector3 movement = new Vector3(Input.GetAxis("MoveHorizontal"), Input.GetAxis("MoveVerticle"), 0.0f);
             transform.position = transform.position + movement * Time.deltaTime * speed;
             PlayerPrefs.SetString("TurnText", "Player " + PlayerPrefs.GetInt("currentPlayer") + "'s turn");
-
+            
             if (turnCount <= 0)
             {
                 gameOver = true;
@@ -72,7 +74,7 @@ namespace FreeDraw
 
             }
 
-            if (!waiting && turnCount >= 0 && !gameOver)
+            if (!waiting && turnCount >= 0 && !gameOver && !paused)
             {
 
                 if (drawing)
@@ -90,11 +92,12 @@ namespace FreeDraw
                 changeMarkerSize();
                 getDrawUp();
             }
+            pause();
             getDrawDown();
             isOnCanvas();
             changeColor();
 
-            if (waiting)
+            if (waiting && !paused)
             {
                 waitTime -= Time.deltaTime;
                 PlayerPrefs.SetString("TurnText", "Get Ready... " + (int)waitTime);
@@ -106,6 +109,22 @@ namespace FreeDraw
                     waiting = false;
                     waitTime = PlayerPrefs.GetFloat("WaitTime");
                 }
+            }
+        }
+        public void pause() {
+            if (Input.GetButtonDown("Pause")) {
+                counter++;
+                if (counter % 2 == 1) {
+                    click = true;
+                    paused = true;
+                    menu.enabled = true;
+                } else {
+                    click = false;
+                    paused = false;
+                    menu.enabled = false;
+                }
+                animator.SetBool("Click", click);
+
             }
         }
         public void changeColor()
@@ -179,11 +198,15 @@ namespace FreeDraw
                     {
                         click = true;
                         menu.enabled = true;
+                        paused = true;
+
                     }
                     else
                     {
                         click = false;
                         menu.enabled = false;
+                        paused = false;
+
                     }
                     animator.SetBool("Click", click);
 

@@ -26,19 +26,19 @@ public class MouseCursorVoting : MonoBehaviour
             SceneManager.LoadScene (1);
 
         }
-        if (Input.GetButtonDown("X")) {
+        if (Input.GetButtonDown("B")) {
             //Pick Player 2
             PlayerPrefs.SetInt("Player2Score", PlayerPrefs.GetInt("Player2Score") + 1);
             SceneManager.LoadScene (1);
 
         }
-        if (Input.GetButtonDown("Y")) {
+        if (Input.GetButtonDown("X")) {
             //Pick Player 3
             PlayerPrefs.SetInt("Player3Score", PlayerPrefs.GetInt("Player3Score") + 1);
             SceneManager.LoadScene (1);
 
         }
-        if (Input.GetButtonDown("B")) {
+        if (Input.GetButtonDown("Y")) {
             //Pick Player 4
             PlayerPrefs.SetInt("Player4Score", PlayerPrefs.GetInt("Player4Score") + 1);
             SceneManager.LoadScene (1);

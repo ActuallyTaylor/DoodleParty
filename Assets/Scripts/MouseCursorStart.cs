@@ -12,6 +12,7 @@ namespace FreeDraw {
         public LayerMask Two_Layers;
         public LayerMask Three_Layers;
         public LayerMask Four_Layers;
+        public LayerMask Shutdown_Layers;
         public int speed;
         public Animator animator;
 
@@ -43,6 +44,7 @@ namespace FreeDraw {
                 Collider2D hit2 = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, Two_Layers.value);
                 Collider2D hit3 = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, Three_Layers.value);
                 Collider2D hit4 = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, Four_Layers.value);
+                Collider2D shutDown = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, Shutdown_Layers.value);
 
                 if (hitUI != null && hitUI.transform != null) {
                     Debug.Log ("Starting");
@@ -50,6 +52,9 @@ namespace FreeDraw {
 
                 } else {
 
+                }
+                if (shutDown != null && shutDown.transform != null) {
+                    Application.Quit();
                 }
 
                 if (hitHelp != null && hitHelp.transform != null) {

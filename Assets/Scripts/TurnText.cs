@@ -7,7 +7,7 @@ public class TurnText : MonoBehaviour
 {
     // Start is called before the first frame update
     private Text text;
-
+    
     void Start()
     {
         text = GetComponent<Text>();
