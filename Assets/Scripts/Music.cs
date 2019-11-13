@@ -18,4 +18,5 @@ public class Music : MonoBehaviour
              instance = this;
          }
          DontDestroyOnLoad(this.gameObject);
-}}
+    }
+}
