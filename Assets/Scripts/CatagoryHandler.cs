@@ -9,7 +9,7 @@ public class CatagoryHandler : MonoBehaviour
 {
     public TextMeshProUGUI catagoryText;
     public TextMeshProUGUI timeText;
-    public float waitTime = 10.0f;
+    public float waitTime = 3.0f;
     private float wait;
     private string[] catagories = new string[] { "Tree", "House", "Ball", "Horse", "Monkey", "Giraffe","Shark","Dog","Cat","Pencil","Toothbrush","Computer","Pen","Phone","Paintbrush"
     ,"Bed","Pillow","School","God","Devil","Teapot","Garden","Spongebob","Chair","Beach","Furniture","Rollercoaster","Octopus","Fish","Kid","Adult","Dinosaur","camera","airplane",

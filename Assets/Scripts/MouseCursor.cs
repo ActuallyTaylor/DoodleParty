@@ -33,6 +33,7 @@ namespace FreeDraw
         public bool gameOver = false;
         public bool paused = false;
         private int counter = 0;
+        private float wait;
 
         // Start is called before the first frame update
         void Start()
@@ -50,8 +51,9 @@ namespace FreeDraw
             drew = false;
             drawing = false;
             waiting = false;
-            waitTime = PlayerPrefs.GetFloat("WaitTime");
+            //waitTime = PlayerPrefs.GetFloat("WaitTime");
             gameOver = false;
+            wait = waitTime;
 
             turnCount = amountOfPlayers * 5;
             
@@ -98,7 +100,7 @@ namespace FreeDraw
             isOnCanvas();
             changeColor();
 
-            /*
+            
             if (waiting && !paused)
             {
                 waitTime -= Time.deltaTime;
@@ -109,10 +111,10 @@ namespace FreeDraw
                     drew = false;
                     drawing = false;
                     waiting = false;
-                    waitTime = PlayerPrefs.GetFloat("WaitTime");
+                    waitTime = wait;
                 }
             }
-            */
+            
         }
 
         public void pause() {
@@ -317,14 +319,9 @@ namespace FreeDraw
             int currentPlayer = PlayerPrefs.GetInt("currentPlayer");
             turnCount -= 1;
             print(turnCount);
-            //waiting = true;
-            waitTime = PlayerPrefs.GetFloat("WaitTime");
+            waiting = true;
+            waitTime = wait;
             targetTime = PlayerPrefs.GetFloat("targetTime");
-
-            drawing = false;
-            drew = false;   
-            waiting = false;
-            waitTime = PlayerPrefs.GetFloat("WaitTime");
             
             if (currentPlayer < amountOfPlayers)
             {

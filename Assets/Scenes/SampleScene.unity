@@ -996,7 +996,7 @@ MonoBehaviour:
     m_Bits: 8192
   targetTime: 3
   drawing: 0
-  waitTime: 10
+  waitTime: 3
   gameOver: 0
   paused: 0
 --- !u!1 &519420028
