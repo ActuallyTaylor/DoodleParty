@@ -6,6 +6,10 @@ TagManager:
   tags:
   - quit
   - music
+  - EasyPack
+  - MediumPack
+  - HardPack
+  - NSFWPack
   layers:
   - Default
   - TransparentFX
