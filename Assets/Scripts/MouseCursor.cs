@@ -92,7 +92,7 @@ namespace FreeDraw
                 }
 
                 getDraw();
-                changeMarkerSize();
+                //changeMarkerSize();
                 getDrawUp();
             }
             pause();
