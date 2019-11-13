@@ -2406,7 +2406,7 @@ MonoBehaviour:
     m_Bits: 65536
   Shutdown_Layers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   speed: 5
   animator: {fileID: 2078564126}
 --- !u!212 &2121642573

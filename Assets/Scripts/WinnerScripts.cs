@@ -30,11 +30,11 @@ public class WinnerScripts : MonoBehaviour
     {
         if (Input.GetButtonDown("Draw")) {
             PlayerPrefs.SetInt("InfiniteMode", 1);
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(5);
         }
         if (Input.GetButtonDown("B")) {
             PlayerPrefs.SetInt("InfiniteMode", 0);
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(7);
 
         }
     }

@@ -20,7 +20,7 @@ namespace FreeDraw {
         void Start () {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            PlayerPrefs.SetInt("previousLevel", 0);
+            PlayerPrefs.SetInt("previousLevel", 7);
             PlayerPrefs.SetInt("Player1Score", 0);
             PlayerPrefs.SetInt("Player2Score", 0);
             PlayerPrefs.SetInt("Player3Score", 0);
@@ -60,12 +60,12 @@ namespace FreeDraw {
 
                 if (hitHelp != null && hitHelp.transform != null) {
                     SceneManager.LoadScene (3);
-                    PlayerPrefs.SetInt("previousLevel", 0);   
+                    PlayerPrefs.SetInt("previousLevel", 7);   
                 }
 
                 if (hitSettings != null && hitSettings.transform != null) {
                     SceneManager.LoadScene (2);
-                    PlayerPrefs.SetInt("previousLevel", 0);
+                    PlayerPrefs.SetInt("previousLevel", 7);
                 } 
                 
                 if (hit2 != null && hit2.transform != null) {
