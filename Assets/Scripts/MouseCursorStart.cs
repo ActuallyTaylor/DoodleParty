@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
+using UnityEngine.Audio;
 
 namespace FreeDraw {
     public class MouseCursorStart : MonoBehaviour {
@@ -15,6 +17,7 @@ namespace FreeDraw {
         public LayerMask Shutdown_Layers;
         public int speed;
         public Animator animator;
+        public VideoPlayer vid;
 
         // Start is called before the first frame update
         void Start () {
