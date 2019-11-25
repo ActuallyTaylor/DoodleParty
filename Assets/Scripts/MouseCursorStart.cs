@@ -19,6 +19,14 @@ namespace FreeDraw {
         public int speed;
         public Animator animator;
         public VideoPlayer vid;
+        public LayerMask Easy_Lay;
+        public LayerMask Medium_Lay;
+        public LayerMask Hard_Lay;
+        public LayerMask NSFW_Lay;
+        public Toggle EasyTog;
+        public Toggle MedTog;
+        public Toggle HardTog;
+        public Toggle NSFWTog;
 
         // Start is called before the first frame update
         void Start () {
@@ -31,7 +39,8 @@ namespace FreeDraw {
             PlayerPrefs.SetInt("Player4Score", 0);
             PlayerPrefs.SetInt("amountOfPlayers", 2);
             PlayerPrefs.SetInt("InfiniteMode", 0);
-
+            PlayerPrefs.SetString("Cat", "Easy");
+            Application.targetFrameRate = 300;
 
         }
 
@@ -51,9 +60,45 @@ namespace FreeDraw {
                 Collider2D hit4 = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, Four_Layers.value);
                 Collider2D shutDown = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, Shutdown_Layers.value);
                 Collider2D UIelements = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, UI_Layers.value);
-
+                Collider2D Easy = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, Easy_Lay.value);
+                Collider2D Medium = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, Medium_Lay.value);
+                Collider2D Hard = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, Hard_Lay.value);
+                Collider2D NSFW = Physics2D.OverlapPoint (transform.position + movement * Time.deltaTime, NSFW_Lay.value);
+                
+                if (Easy != null && Easy.transform != null) {
+                    EasyTog.isOn = true;
+                    MedTog.isOn = false;
+                    HardTog.isOn = false;
+                    NSFWTog.isOn = false;
+                    PlayerPrefs.SetString("Cat", "Easy");
+                }
+                
+                if (Medium != null && Medium.transform != null) {
+                    EasyTog.isOn = false;
+                    MedTog.isOn = true;
+                    HardTog.isOn = false;
+                    NSFWTog.isOn = false;
+                    PlayerPrefs.SetString("Cat", "Medium");
+                }
+                
+                if (Hard != null && Hard.transform != null) {
+                    EasyTog.isOn = false;
+                    MedTog.isOn = false;
+                    HardTog.isOn = true;
+                    NSFWTog.isOn = false;
+                    PlayerPrefs.SetString("Cat", "Hard");
+                }
+                
+                if (NSFW != null && NSFW.transform != null) {
+                    EasyTog.isOn = false;
+                    MedTog.isOn = false;
+                    HardTog.isOn = false;
+                    NSFWTog.isOn = true;
+                    PlayerPrefs.SetString("Cat", "NSFW");
+                }
+                
                 if (UIelements != null && UIelements.transform != null) {
-                    
+
                 }
 
                 if (hitUI != null && hitUI.transform != null) {

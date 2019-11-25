@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 4078605}
   - component: {fileID: 4078607}
   - component: {fileID: 4078606}
-  m_Layer: 5
+  m_Layer: 20
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 171238176}
   - component: {fileID: 171238178}
   - component: {fileID: 171238177}
-  m_Layer: 5
+  m_Layer: 19
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -738,9 +738,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Hard Pack
-
-'
+  m_Text: Pack 3
 --- !u!222 &171238178
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -840,7 +838,7 @@ GameObject:
   - component: {fileID: 386486476}
   - component: {fileID: 386486478}
   - component: {fileID: 386486477}
-  m_Layer: 5
+  m_Layer: 17
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -914,7 +912,7 @@ GameObject:
   - component: {fileID: 407452620}
   - component: {fileID: 407452622}
   - component: {fileID: 407452621}
-  m_Layer: 5
+  m_Layer: 18
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1175,7 +1173,7 @@ GameObject:
   - component: {fileID: 528896885}
   - component: {fileID: 528896884}
   - component: {fileID: 528896883}
-  m_Layer: 11
+  m_Layer: 12
   m_Name: Help
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1434,7 +1432,7 @@ GameObject:
   - component: {fileID: 783363832}
   - component: {fileID: 783363834}
   - component: {fileID: 783363833}
-  m_Layer: 5
+  m_Layer: 18
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1820,7 +1818,7 @@ GameObject:
   - component: {fileID: 977097336}
   - component: {fileID: 977097338}
   - component: {fileID: 977097337}
-  m_Layer: 5
+  m_Layer: 17
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1893,7 +1891,7 @@ GameObject:
   - component: {fileID: 1075653543}
   - component: {fileID: 1075653542}
   - component: {fileID: 1075653541}
-  m_Layer: 12
+  m_Layer: 11
   m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2330,7 +2328,7 @@ GameObject:
   - component: {fileID: 1270916508}
   - component: {fileID: 1270916509}
   - component: {fileID: 1270916510}
-  m_Layer: 5
+  m_Layer: 18
   m_Name: Toggle (1)
   m_TagString: MediumPack
   m_Icon: {fileID: 0}
@@ -2429,7 +2427,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 115, y: 20}
   m_EdgeRadius: 0
 --- !u!1 &1292513094
 GameObject:
@@ -2442,7 +2440,7 @@ GameObject:
   - component: {fileID: 1292513095}
   - component: {fileID: 1292513096}
   - component: {fileID: 1292513097}
-  m_Layer: 5
+  m_Layer: 17
   m_Name: Toggle
   m_TagString: EasyPack
   m_Icon: {fileID: 0}
@@ -2516,7 +2514,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!61 &1292513097
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2541,7 +2539,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 115, y: 20}
   m_EdgeRadius: 0
 --- !u!1 &1337557881
 GameObject:
@@ -2710,7 +2708,7 @@ GameObject:
   - component: {fileID: 1388475466}
   - component: {fileID: 1388475468}
   - component: {fileID: 1388475467}
-  m_Layer: 5
+  m_Layer: 19
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2783,7 +2781,7 @@ GameObject:
   - component: {fileID: 1408637816}
   - component: {fileID: 1408637818}
   - component: {fileID: 1408637817}
-  m_Layer: 5
+  m_Layer: 18
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2840,7 +2838,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Medium Pack
+  m_Text: Pack 2
 --- !u!222 &1408637818
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2860,7 +2858,7 @@ GameObject:
   - component: {fileID: 1554127152}
   - component: {fileID: 1554127154}
   - component: {fileID: 1554127153}
-  m_Layer: 5
+  m_Layer: 17
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2917,7 +2915,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Easy Pack
+  m_Text: Pack 1
 --- !u!222 &1554127154
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2937,7 +2935,7 @@ GameObject:
   - component: {fileID: 1594438519}
   - component: {fileID: 1594438521}
   - component: {fileID: 1594438520}
-  m_Layer: 5
+  m_Layer: 19
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3011,7 +3009,7 @@ GameObject:
   - component: {fileID: 1637582162}
   - component: {fileID: 1637582164}
   - component: {fileID: 1637582163}
-  m_Layer: 5
+  m_Layer: 20
   m_Name: Checkmark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3257,7 +3255,7 @@ GameObject:
   - component: {fileID: 1933136165}
   - component: {fileID: 1933136167}
   - component: {fileID: 1933136166}
-  m_Layer: 5
+  m_Layer: 20
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3334,7 +3332,7 @@ GameObject:
   - component: {fileID: 1998178159}
   - component: {fileID: 1998178160}
   - component: {fileID: 1998178161}
-  m_Layer: 5
+  m_Layer: 19
   m_Name: Toggle (2)
   m_TagString: HardPack
   m_Icon: {fileID: 0}
@@ -3433,7 +3431,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 115, y: 20}
   m_EdgeRadius: 0
 --- !u!1 &2016328065
 GameObject:
@@ -3763,7 +3761,7 @@ GameObject:
   - component: {fileID: 2113509247}
   - component: {fileID: 2113509248}
   - component: {fileID: 2113509249}
-  m_Layer: 5
+  m_Layer: 20
   m_Name: Toggle (3)
   m_TagString: NSFWPack
   m_Icon: {fileID: 0}
@@ -3862,7 +3860,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 115, y: 20}
   m_EdgeRadius: 0
 --- !u!1 &2121642571
 GameObject:
@@ -3897,10 +3895,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Start_Layers:
     serializedVersion: 2
-    m_Bits: 4096
+    m_Bits: 2048
   Help_Layers:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 4096
   Settings_Layers:
     serializedVersion: 2
     m_Bits: 8192
@@ -3922,6 +3920,22 @@ MonoBehaviour:
   speed: 5
   animator: {fileID: 2078564126}
   vid: {fileID: 0}
+  Easy_Lay:
+    serializedVersion: 2
+    m_Bits: 131072
+  Medium_Lay:
+    serializedVersion: 2
+    m_Bits: 262144
+  Hard_Lay:
+    serializedVersion: 2
+    m_Bits: 524288
+  NSFW_Lay:
+    serializedVersion: 2
+    m_Bits: 1048576
+  EasyTog: {fileID: 1292513096}
+  MedTog: {fileID: 1270916509}
+  HardTog: {fileID: 1998178160}
+  NSFWTog: {fileID: 2113509248}
 --- !u!212 &2121642573
 SpriteRenderer:
   m_ObjectHideFlags: 0
